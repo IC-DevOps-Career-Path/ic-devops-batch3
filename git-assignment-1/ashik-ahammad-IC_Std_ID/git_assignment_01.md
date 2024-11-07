@@ -1,5 +1,4 @@
-## This document provides a list of Git commands with descriptions and examples to help understand each command's function.
-
+## This document provides a list of Git commands with descriptions and examples to help understand each command's and it's function.
 
 
 1. git init: Initializes a new Git repository in the current directory.
