@@ -14,7 +14,7 @@
 9. **git fetch**: `Fetches changes from a remote repository.` ![image](https://github.com/user-attachments/assets/72169035-1a43-4fc2-a88d-d736a75a4cec)
 10. **git pull**: `Fetches changes and merges them into the current branch.` ![image](https://github.com/user-attachments/assets/73a7d615-eb7c-4e3e-aa3b-f3a4b9325287)
 11. **git pull origin main**: `Fetches changes from a remote repository and merges them into your local branch.`
-13. **git branch [branch-name] or git checkout -b [branch-name]**: Creates a new branch.` ![image](https://github.com/user-attachments/assets/dcd384d0-e358-4965-85aa-52e9643ea2c5)
+13. **git branch [branch-name] or git checkout -b [branch-name]**: `Creates a new branch.` ![image](https://github.com/user-attachments/assets/dcd384d0-e358-4965-85aa-52e9643ea2c5)
 14. **git checkout [branch-name]**: `Switches to a different branch.` ![image](https://github.com/user-attachments/assets/a61eb3d5-08e3-438b-90a0-cbb48da410a6)
 15. **git merge [branch-name]**: `Merges the specified branch into the current branch.` ![image](https://github.com/user-attachments/assets/b460cdba-3350-4f2f-aa6e-25e3cedb330f)
 16. **git status**: `Shows the current state of the working directory.` ![image](https://github.com/user-attachments/assets/ed91a299-bed1-43f8-ad05-46547d91111e)
