@@ -3,9 +3,9 @@
 
 
 
-1. **git init**: Initializes a new Git repository in the current directory. ![image](https://github.com/user-attachments/assets/6a6fa0bc-5c34-49f9-aab4-f90e89a92297)
-2. **git add [file]**: Adds a file to the staging area. ![image](https://github.com/user-attachments/assets/d03488c8-aba2-450b-8c9f-89030abc1437)
-3. **git commit -m "[message]"**: Commits the staged changes with a message. ![image](https://github.com/user-attachments/assets/78f0fde7-ab55-4024-874e-c94ddb56863e)
+1. `**git init**`: Initializes a new Git repository in the current directory. ![image](https://github.com/user-attachments/assets/6a6fa0bc-5c34-49f9-aab4-f90e89a92297)
+2. `**git add [file]**`: Adds a file to the staging area. ![image](https://github.com/user-attachments/assets/d03488c8-aba2-450b-8c9f-89030abc1437)
+3. `**git commit -m "[message]"**`: Commits the staged changes with a message. ![image](https://github.com/user-attachments/assets/78f0fde7-ab55-4024-874e-c94ddb56863e)
 4. **git commit --amend**: If an existing commit needs to edit. ![image](https://github.com/user-attachments/assets/a74950c1-60ce-4642-a9b6-53fbe6c5e47c)
 5. **git push**: Pushes local commits to a remote repository. ![image](https://github.com/user-attachments/assets/ed8e54de-a691-4f92-8ac1-70b40dbc11ab)
 6. **git push origin main**: Pushes the changes in the main branch to the remote repository. 
