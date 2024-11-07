@@ -4,7 +4,7 @@
 
 
 1. git init: Initializes a new Git repository in the current directory.
-2. git add [file]: Adds a file to the staging area.
+2. git add [file]: Adds a file to the staging area. git-assignment-1/screenshots/add.png
 3. git commit -m "[message]": Commits the staged changes with a message.
 4. git commit --amend: If an existing commit needs to edit.
 5. git push: Pushes local commits to a remote repository.
