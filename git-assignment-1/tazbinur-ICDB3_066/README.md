@@ -2,6 +2,11 @@
 
 Git is a popular version control system used by software developers worldwide. This documentation provides a comprehensive guide to essential Git commands and their usage.
 
+Besides this documentation, You can have a look into my blog of github commands & their example in medium from this link 👇 
+
+[Git Essentials: git stash, restore, reset, revert, rebase, squash & more!](https://medium.com/@mdtazbinur/git-essentials-git-stash-restore-reset-revert-rebase-squash-more-c852da206cc8)
+*By Tazbinur | Published on Aug 25, 2024*
+
 ## File Structure
 ```
 project-root/
