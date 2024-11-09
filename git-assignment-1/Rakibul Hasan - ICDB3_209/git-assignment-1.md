@@ -38,3 +38,92 @@ Merging combines the changes from one branch into another. This is how you incor
 #### 5. Remote
 
 A remote repository is a version of your project hosted on the internet or another network. GitHub, GitLab, and Bitbucket are popular platforms for hosting Git remotes.
+
+## Getting Started with Git
+
+To begin using Git, you need to have it installed on your system. You can download Git from [git-scm.com](https://git-scm.com).
+
+### Basic Git Commands
+
+Here’s a guide to some fundamental Git commands to get you started:
+
+#### • Initialize a Git Repository
+
+```bash
+git init
+```
+
+Initializes a new Git repository in your current directory.
+
+#### • Clone a Repository
+
+```bash
+git clone <repository-url>
+```
+
+Cloning copies a remote repository to your local machine, allowing you to start working on it.
+
+#### • Check the Status
+
+```bash
+git status
+```
+
+Shows the current state of your working directory, including files that have been modified, added, or deleted.
+
+#### • Add Files
+
+```bash
+git add <file-name>
+git add .
+```
+
+The git add command stages changes for commit. Use . to stage all changes.
+
+#### • Commit Changes
+
+```bash
+git commit -m "Your commit message"
+```
+
+Commit saves your changes. Make sure to use a descriptive commit message that explains what you did.
+
+#### • Push to a Remote Repository
+
+```bash
+git push origin <branch-name>
+```
+
+This command pushes your changes to the remote repository on the specified branch.
+
+#### • Pull from a Remote Repository
+
+```bash
+git pull origin <branch-name>
+```
+
+git pull updates your local repository with changes from the remote.
+
+#### • Create a New Branch
+
+```bash
+git branch <new-branch-name>
+```
+
+This command creates a new branch, which allows you to work independently of the main branch.
+
+#### • Switch to a Branch
+
+```bash
+git checkout <branch-name>
+```
+
+git checkout allows you to switch between branches.
+
+#### • Merge Branches
+
+```bash
+git merge <branch-name>
+```
+
+Merging combines the specified branch into the current branch.
