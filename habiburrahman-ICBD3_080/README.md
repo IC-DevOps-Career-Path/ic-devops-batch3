@@ -32,3 +32,42 @@ A centralized version control system (CVCS) is a type of VCS where all users are
     - CVS Version Control (Concurrent Versions System)
     - Bitbucket
 
+# What is Git & GitHub?
+
+### Git :  
+Most widely used modern version control system in the world today is Git. Git is a **mature, actively maintained** open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel.
+### GitHub :  
+GitHub is a code hosting platform for collaboration and version control.
+#### GitHub essentials are:
+- Repositories
+- Branches
+- Commits
+- Pull Requests
+
+
+# How to setup git?
+**Configure Git with Your Username and Email :** Replace git-username and git-email with your own Git username and email address
+```bash
+git config --global user.name "git-username"
+```
+```bash
+git config --global user.email "git-email"
+```
+
+
+**Setup ssh key in your github account :** Generate ssh key
+
+```bash
+ssh-keygen
+```
+```bash
+ssh-keygen -t rsa -b 4096 -C "34seu.habib@gmail.com"
+```
+
+-  ***-t:*** Specifies the type of key to create. Here, rsa is chosen as the key type.
+- ***rsa:*** Refers to the RSA algorithm, a commonly used public-key cryptographic algorithm. It is widely used in SSH for securely logging into remote servers.
+- ***-b 4096:*** Specifies the bit length of the key. In this case, 4096 bits are used, which makes the key stronger by increasing the computational effort required to break it.
+- ***-C:*** Adds a comment to the key. The comment ***34seu.habib@gmail.com*** here serves as an identifier for the key, which is useful for distinguishing it, especially if you have multiple SSH keys.
+
+
+![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\ssh-keygen.png)
