@@ -14,10 +14,6 @@ project-root/
     └── ...
 ```
 
-# Git Commands with Screenshots
-
-This document contains practical examples of Git commands with screenshots demonstrating their usage in a local environment.
-
 ### git status
 Shows the current state 
 
