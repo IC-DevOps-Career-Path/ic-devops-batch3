@@ -2,7 +2,7 @@
 <br>
 <div align="center">
     <h2><img alt="branch" src="./images/br1.png" style="vertical-align: middle;">  GIT Commands Cheat Sheet <img alt="branch" src="./images/br2.png" style="vertical-align: middle;"></h2>
-    <img alt="logo" src="./images/logo.png" style="vertical-align: middle;"> <b>Git is a version control system, that helps us to track changes in code, making collaboration and version management easy and efficient.</b> <br>Git made our life easier by allowing multiple people to work on the same project simultaneously, and also lets you save different versions of your work, making it easy to manage and revert versions whenever you need. <br> Anyway, let's get started!<br><br>
+    <b>Git is a version control system, that helps us to track changes in code, making collaboration and version management<br> easy and efficient.</b> <br>Git made our life easier by allowing multiple people to work on the same project simultaneously, and also lets you save different versions of your work, making it easy to manage and revert versions whenever you need. <br> Anyway, let's get started!<br><br>
     <img src="https://user-images.githubusercontent.com/74038190/235223599-0eadbd7c-c916-4f24-af9d-9242730e6172.gif" width="75">&nbsp;<br><br><br>
 </div>
 <br>
@@ -42,7 +42,7 @@
 <br>
 
 <div align="center">
-  <b style="font-size: 18px;">After installing Git,</b> kindly create an account in any remote repositories like <b>GitHub</b> and <b>GitLab</b>, if you haven't.<br>
+  <h3>After installing Git,</h3> kindly create an account in any remote repositories like <b>GitHub</b> and <b>GitLab</b>, if you haven't.<br>
   Links are right below 👇 <br><br>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
@@ -53,7 +53,7 @@ Here, I am going to use <b>Github</b> as my remote repository system.</p><br>
 </div>
 </div>
 
-<br>
+<br><br>
 
 <!-- SETTING UP GIT CREDS -->
 <div classname="credentialSet">
@@ -75,6 +75,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     </li>
   </ul>
   <b>*** Kindly make sure the mail and username should be similar as your remote repository's account. Thank you.</b>
+  <br><br>
 
 ### 2️⃣ &nbsp;Scope-wise Credentials Settings:
 
@@ -91,7 +92,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
 
   <br>
   <div align="center">
-    <b style="font-size: 18px;">I would suggest to set it globally</b>, otherwise you have to set it everytime whenever you are starting to work on a new project.<br>
+    <h3>I would suggest to set it globally,</h3> otherwise you have to set it everytime whenever you are starting to work on a new project.<br>
     Don't worry, if you set it locally, instead of globally. Just run the below command. 
   </div>
   <br><br>
@@ -101,10 +102,88 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     <pre><code>git config --global credential.helper store</code></pre>
   </li>
 
-<br><br><br>
+<br>
 
   <div align="center">
     <b style="font-size: 15px;">Well done! Now you can use Git commands freely in your OS terminal.</b><br>
     <img src="https://media.tenor.com/1ADKc_7IBw8AAAAi/cute.gif" width="90" alt="Success GIF"><br>
   </div>
+</div>
+
+<br><br>
+
+<!-- Git Basics -->
+<div classname="Basics">
+  <h2><img alt="logo" src="./images/logo.png" style="vertical-align: middle;"> Git Basics</h2>
+  <div align="center">
+    <h3> *** If you guys are using Vscode, you can directly use it's terminal after opening a folder where you wish to code.***</h3>
+    <b>(Hotkey: Shift + Left Ctrl + ~)</b>
+  </div><br>
+
+### 🔗 Creating a local repository
+
+  <ul>
+    <li>
+      Clone a repository from remote hosts (like GitHub, GitLab),
+      <pre><code>git clone https://remote_repo_url</code></pre><br><br>
+      <div align="center">
+        <b>Question :</b> WHERE WILL I GET THE LINK?! 😢<br>
+        <b>Answer   :</b> 👇 <br><br>
+        <img src="./images/Screenshots/https.PNG" width=700><br><br>
+        Here, we used <b>HTTPS link</b>. There are 2 more options, <b>SSH link</b> and <b>Github Cli</b>.<br> 
+        While SSH cloning is generally considered a bit more secure
+        because you have to use an SSH key for authentication,<br> HTTPS cloning is
+        much simpler and the recommended cloning option by GitHub.<br>
+        <h3>I would prefer to use HTTPS link for the simplicity,</h3><br>
+      </div>
+      HTTPS cloning :
+      <pre><code>git clone https://github.com/your_username/repo_name.git</code></pre>
+      SSH cloning :
+      <pre><code> git clone git@github.com:user_name/repo_name.git</code></pre><br>
+      <img src="./images/Screenshots/clone.PNG">
+      <br><br>
+    </li>
+    <li>
+      Initialize git for tracking inside the current directory locally,
+      <pre><code>git init</code></pre>
+      <div><b>👉 Here, make sure you are in the repository's folder.</b><br>In the screenshot, as I cloned the "nginx" repository, firstly I ensured that I am in the "nginx" folder.
+      </div><br>
+      <img src="./images/Screenshots/init.PNG">
+      <br><br>
+      <b>👉 When you clone a repository, by default it initializes git.</b><br>
+      Like in the screenshot below, when I went to the repository folder <b>(nginx)</b>, 
+      it showed the tag <b>(master)</b> in the git bash because, git has been initialized already.
+      <br>
+      <img src="./images/Screenshots/init1.PNG"><br><br>
+      <b>👉 You can see the similar tag in the vscode,</b> if you open the repository folder directly,<br>
+      <img src="./images/Screenshots/init2.PNG"><br><br>
+    </li>
+    <div align="center">
+      <h3>* Creating a new connection from the repository url is called "Remote".</h3>
+      It comes to handly, when you are <b>FORKING</b> a repository.<br> 
+      (default remote name after cloning <b>"origin"</b>)
+    </div><br><br>
+    <li>
+      To check all the remote connections with details,
+      <pre><code>git remote -v</code></pre>
+    </li>
+    <li>
+      To add and naming a remote connection, (you can name anything to the remote_name, just make sure it's unique and meaningful)
+      <pre><code>git remote add remote_name https://remote_repo_url</code></pre>
+    </li>
+    <img src="./images/Screenshots/remote.PNG"><br><br>
+    <li>
+      To remove a remote connection,
+      <pre><code>git remote rm remote_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/remote1.PNG"><br><br>
+    <li>
+      You can also rename a remote connection,
+      <pre><code>git remote rename old_name new_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/remote2.PNG"><br><br>
+  </ul>
+  <br><br>
+
+  
 </div>
