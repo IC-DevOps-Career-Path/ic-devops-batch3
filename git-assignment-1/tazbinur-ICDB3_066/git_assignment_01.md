@@ -2,6 +2,18 @@
 
 This documentation provides real-world examples of Git commands with screenshots from amy local development environment.
 
+## File Structure
+```
+project-root/
+├── README.md
+├── git-assignment_01.md
+└── screenshots/
+    ├── git-init.png
+    ├── git-clone.png
+    ├── git-add.png
+    └── ...
+```
+
 # Git Commands with Screenshots
 
 This document contains practical examples of Git commands with screenshots demonstrating their usage in a local environment.

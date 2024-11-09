@@ -2,6 +2,18 @@
 
 Git is a popular version control system used by software developers worldwide. This documentation provides a comprehensive guide to essential Git commands and their usage.
 
+## File Structure
+```
+project-root/
+├── README.md
+├── git-assignment_01.md
+└── screenshots/
+    ├── git-init.png
+    ├── git-clone.png
+    ├── git-add.png
+    └── ...
+```
+
 ## Terminology
 
 To get started with git & git commands, lets first understand some terminologies of git:
