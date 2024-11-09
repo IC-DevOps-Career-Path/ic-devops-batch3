@@ -1,6 +1,6 @@
 # Git Commands - Visual Guide
 
-This documentation provides real-world examples of Git commands with screenshots from amy local development environment.
+This documentation provides real-world examples of Git commands with screenshots from my local development environment.
 
 ## File Structure
 ```
@@ -35,7 +35,7 @@ Manage remote repositories
 ![git remote command](./screenshots/git-remote.png)
 
 ### git add
-Add single files
+Add single file
 
 ![git add command](./screenshots/git-add-1.png)
 
@@ -68,7 +68,7 @@ Switch between branches & commits
 ![git checkout command](./screenshots/git-checkout.png)
 
 ### git merge
-Merge branches & also abort brnch merge
+Merge branches & also abort branch merge
 
 ![git merge command](./screenshots/git-merge.png)
 
