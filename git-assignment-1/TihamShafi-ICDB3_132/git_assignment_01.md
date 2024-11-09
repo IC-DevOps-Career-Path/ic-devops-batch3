@@ -1,7 +1,7 @@
 <img src="./images/banner.png" alt="Banner">
 <br>
 <div align="center">
-    <h2><img alt="branch" src="./images/br1.png" style="vertical-align: middle;">  GIT Commands Cheat Sheet <img alt="branch" src="./images/br2.png" style="vertical-align: middle;"></h2>
+    <h2><img alt="branch" src="./images/br1.png" style="vertical-align: middle;">  GIT Cheat Sheet <img alt="branch" src="./images/br2.png" style="vertical-align: middle;"></h2>
     <b>Git is a version control system, that helps us to track changes in code, making collaboration and version management<br> easy and efficient.</b> <br>Git made our life easier by allowing multiple people to work on the same project simultaneously, and also lets you save different versions of your work, making it easy to manage and revert versions whenever you need. <br> Anyway, let's get started!<br><br>
     <img src="https://user-images.githubusercontent.com/74038190/235223599-0eadbd7c-c916-4f24-af9d-9242730e6172.gif" width="75">&nbsp;<br><br><br>
 </div>
@@ -14,6 +14,7 @@
 👉 &nbsp;Key Git commands are listed here with example screenshots for easy reference.<br>
 👉 &nbsp;The guide covers most commonly used commands that you will encounter frequently.<br>
 👉 &nbsp;Mainly designed to make using Git easier and more efficient.<br>
+👉 &nbsp;But if you want to directly see the list of git commands, [Click here](#git-commands)<br>
 
 ### Hope you guys will like it, and Good Luck! <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/34376b0e-4ae2-4278-9d3d-82e8016a87d6" width="75">&nbsp;
 
@@ -113,14 +114,14 @@ changes to the code. So, Git allows you to set user credentials for tracking you
 <br><br>
 
 <!-- Git Basics -->
-<div classname="Basics">
-  <h2><img alt="logo" src="./images/logo.png" style="vertical-align: middle;"> Git Basics</h2>
+<div classname="basics">
+  <h2 id="git-commands"><img alt="logo" src="./images/logo.png" style="vertical-align: middle;">Git Commands</h2>
   <div align="center">
-    <h3> *** If you guys are using Vscode, you can directly use it's terminal after opening a folder where you wish to code.***</h3>
+    <h3> If you guys are using Vscode,<br> you can directly use it's terminal after opening a folder where you wish to code</h3>
     <b>(Hotkey: Shift + Left Ctrl + ~)</b>
   </div><br>
 
-### 🔗 Creating a local repository
+### 🔗 Creating a Local Repository
 
   <ul>
     <li>
@@ -134,7 +135,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
         While SSH cloning is generally considered a bit more secure
         because you have to use an SSH key for authentication,<br> HTTPS cloning is
         much simpler and the recommended cloning option by GitHub.<br>
-        <h3>I would prefer to use HTTPS link for the simplicity,</h3><br>
+        <h3>👌 I would prefer to use HTTPS link for the simplicity,</h3><br>
       </div>
       HTTPS cloning :
       <pre><code>git clone https://github.com/your_username/repo_name.git</code></pre>
@@ -161,7 +162,10 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     <div align="center">
       <h3>* Creating a new connection from the repository url is called "Remote".</h3>
       It comes to handly, when you are <b>FORKING</b> a repository.<br> 
-      (default remote name after cloning <b>"origin"</b>)
+      (default remote name after cloning <b>"origin"</b>)<br><br>
+      <b>Question :</b> NOW WHAT IS <b>FORKING</b>?!<br>
+      <img src="https://c.tenor.com/bzpFHIbvpJMAAAAd/tenor.gif" width=200><br><br>
+      <b>Answer   :</b> Forking creates a personal copy of someone else's repository,<br> allowing independent development without affecting the original project. 👌 <br><br>
     </div><br><br>
     <li>
       To check all the remote connections with details,
@@ -185,5 +189,157 @@ changes to the code. So, Git allows you to set user credentials for tracking you
   </ul>
   <br><br>
 
-  
+### 🌿 Branching Repository
+
+  <br>
+  <div align="center">
+    Branching is really crucial because,<br> 
+    it allows multiple developers to work on different features or fixes simultaneously,<br><b>without affecting the main codebase</b><br>
+    As you are not affecting the main codebase, it is much safer.
+  </div><br><br>
+
+  <ul>
+    <li>
+      To see all the local branches,
+      <pre><code>git branch</code></pre>
+    </li>
+    <li>
+      To see all the remote branches,
+      <pre><code>git branch -a</code></pre>
+    </li>
+    <li>
+      Create a new local branch and switch into it,
+      <pre><code>git checkout -b new_branch_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/create_branch.PNG"><br>
+    Here you can see a star on the left side of dummyBranch in the screenshot.<b> It indicates, which branch you are currently in.</b><br><br>
+    <b>Similarly, you can check it in the vscode,</b><br>
+    <img src="./images/Screenshots/create_branch.PNG"><br><br>
+    <li>
+      Switch into an existing branch,
+      <pre><code>git checkout branch_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/checkout.PNG"><br><br>
+    <li>
+      Renaming the current branch,
+      <pre><code>git branch -m new_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/rename_branch.PNG"><br><br>
+    <li>
+      Safe delete a local branch (prevents deleting unmerged changes. <b>Also make sure you are not in the same branch which you are going to delete</b>),
+      <pre><code>git branch -d branch_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/rename_branch.PNG"><br><br>
+    <li>
+      Force delete a local branch (whether merged or unmerged. <b>Also make sure you are not in the same branch which you are going to delete</b>),
+      <pre><code>git branch -D branch_name</code></pre>
+    </li>
+    <li>
+      Delete a remote branch,
+      <pre><code>git push remote_name --delete branch_name</code></pre>
+    </li> 
+  </ul>
+  <br><br>
+
+### 📁 Working With Files
+
+  <br>
+  <div align="center">
+    Suppose you worked on few files in the local repository folder.<br>
+    Even though, the <b>changes are made locally,</b> now you have to <b>update the changes remotely.</b> Right?<br>
+    So that your friends can also get the latest version, and work on it.<br><br><br>
+    <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/6e08afa6-3618-4c9e-8c1c-0ed8f4262bd3" width="160" />
+  </div>
+  <br><br>
+  <div>
+    <h3>📌 Some key concepts:</h3>
+    <ul>
+      <li><b> .gitignore file:</b> A file that lists other files you want git not to track<br></li>
+      <li><b> Staging area:</b> a cache that holds changes you want to commit next<br></li>
+      <li><b> Stash:</b> another type of cache that holds untracked changes, that you may want to later<br></li>
+      <li><b> Forking:</b> It creates a personal copy of someone else's repository, allowing independent development without affecting the original project.<br></li>
+      <li><b> Commit ID or hash:</b> a unique identifier for each commit, used for switching to different save points<br></li>
+      <li><b> HEAD (always capitalized letters):</b> a reference name for the latest commit, to save you having to type Commit IDs.<br></li>
+    </ul>
+  </div>
+  <br><br>
+  <ul>
+    <li>
+      See changes in the local repository (<b>Mainly to see if the changes are tracked or untracked by git</b>),
+      <pre><code>git status</code></pre>
+    </li>
+    <h3>1️⃣ Add and Commit:</h3>
+    <li>
+      To add all the changes to the staging area (including all untracked and tracked files),<br>
+      <pre><code>git add .</code></pre>
+    </li>
+    <li>
+      Saving a snapshot of the staged changes with a custom message,
+      <pre><code> git commit -m "Commit_message"</code></pre>
+      <b>or,</b>
+      <pre><code> git commit </code></pre>
+      <b>This will take you to a text editor (by default vim) to write the custom message</b>
+    </li>
+    <li>
+      Editing the message of the latest commit,
+      <pre><code> git commit --amend -m "Commit_message" </code></pre>
+      <b>or,</b>
+      <pre><code> git commit --amend</code></pre>
+    </li>
+    <li>
+      Take the file from staging area to untracked stage,
+      <pre><code>git rm --cached file_name</code></pre>
+    </li>
+    <h3>2️⃣ Stashing: </h3>
+    <li>
+      Saving staged and unstaged changes to a temporaray storage for a later use,
+      <pre><code>git stash</code></pre>
+    </li>
+    <li>
+      Shows the list of stashed files,
+      <pre><code>git stash list</code></pre>
+    </li>
+    <li>
+      Reapply previously stashed changes (more like pasting all the changes from the temporaray storage),
+      <pre><code>git stash pop</code></pre>
+    </li>
+    <li>
+      Dropping stashed changes,
+      <pre><code>git stash clear</code></pre>
+    </li>
+    <h3>3️⃣ Fetching: </h3>
+    <li>
+      Download all commits and branches to the local repository,
+      <pre><code>git fetch</code></pre>
+    </li>
+    <li>
+      Only download the specified branch from the remote,
+      <pre><code> git fetch remote_name branch_name</code></pre>
+    </li>
+    <h3>4️⃣ Push and Pull: </h3>
+    <li>
+      To retrieve and stay up to date (aggressive merging),
+      <pre><code>git pull remote_name branch_name</code></pre>
+    </li>
+    <li>
+      To push all the tracked changes and giving a pull request (PR) for merging,
+      <pre><code>git push remote_name branch_name</code></pre>
+    </li>
+    <h3>5️⃣ Logs and History: </h3>
+    <li>
+      List all commits with their author, commit ID, date and message,
+      <pre><code>git log</code></pre>
+    </li>
+    <li>
+      List one commit per line (n defines the number of commit lines to show),
+      <pre><code> git log --oneline [-n]</code></pre>
+    </li>
+    <li>
+      List all commits with all the commands of the local repository,
+      <pre><code>git reflog</code></pre>
+    </li>
+
+  </ul>
+  Reset, rebase pending
+
 </div>
