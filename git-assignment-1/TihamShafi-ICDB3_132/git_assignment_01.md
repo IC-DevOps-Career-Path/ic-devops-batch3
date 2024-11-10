@@ -125,7 +125,8 @@ changes to the code. So, Git allows you to set user credentials for tracking you
   <h2 id="git-commands"><img alt="logo" src="./images/logo.png" style="vertical-align: middle;">Git Commands</h2>
   <div align="center">
     <h3> If you guys are using Vscode,<br> you can directly use it's terminal after opening a folder where you wish to code</h3>
-    <b>(Hotkey: Shift + Left Ctrl + ~)</b>
+    <b>(Hotkey: Shift + Left Ctrl + ~)</b><br><br>
+    <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="80" alt="Success GIF"><br>   
   </div><br>
 
 ### 🔗 Creating a Local Repository
@@ -345,7 +346,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     Showing the stashed file with it's commit ID.
     <br><br>
     <li>
-      Reapply previously stashed changes (more like pasting all the changes from the temporaray storage),
+      Reapply previously stashed changes<br>(more like pasting all the changes from the temporaray storage),
       <pre><code>git stash pop</code></pre>
     </li>
     <img src="./images/Screenshots/stashpop.PNG"><br><br>
@@ -412,7 +413,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <b>Answer   :</b> Everyone faces that, but not to worry.<br> 
       Mostly it happens, when your local repository is not up to date.<br>
       In the next section we will be learning about <b>rebase</b> and <b>reset</b> commands, to avoid such conflicts.<br>
-      Yeah, there are more topics to cover 😅............<br>
+      Yeah, there are 2 more topics to cover 😅............<br>
       <br><br><br><br>
       <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/491e3e44-11a0-487a-b07b-717f677bbe4a" width="400"><br><br><br>
       <h3>Anyway...</h3>
@@ -493,6 +494,26 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     <li>
       Continue rebase after resolving conflicts,
       <pre><code>git rebase --continue</code></pre>
+    </li>
+    <br><br>
+    <div align="center">
+      For <b>merging</b>, I would suggest to use the Vscode's interface instead of the merge command.<br>  
+      <h3>If any merge conflicts occur while rebasing or after pulling,<br> go to the <code>Source Control</code> to work in the merge editor.</h3><br><br>
+      <img src="./images/Screenshots/source_cont.PNG"><br>
+      <b>Here you can also see all the modified files, highlighting the changes. From here you can also commit, but it isn't recommended.</b>
+      <br><br>
+      <b>If you see any conflicts, you will see a similar UI like this, 👇</b><br><br>
+      <img src="./images/Screenshots/conflict1.png" width="700"><br><br>
+      <b>There you can see the upcoming changes and the present codes.<br> 
+      Modify them accordingly by pressing <code>Resolve in Merge Editor</code>,<br>
+      and after that, press <code>Complete Merge</code> button.</b><br><br>
+      <img src="./images/Screenshots/conflict2.png" width="700"><br>
+      <br>
+    </div>
+    <br><br>
+    <li>
+      If you want to revert or abort the merge,,
+      <pre><code> git merge --abort</code></pre>
     </li>
   </ul>
   <br><br><br>
