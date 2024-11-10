@@ -1,0 +1,96 @@
+# General OS generated files
+.DS_Store
+Thumbs.db
+
+# macOS system files
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+# Windows system files
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux system files
+*~
+
+# Node and npm files
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# PHP Composer files
+/vendor/
+composer.lock
+
+# Laravel specific files
+.env
+.env.backup
+.env.*.backup
+/public/storage
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/bootstrap/cache/*
+
+# IDE files
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+
+# Backup files
+*.bak
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Logs
+*.log
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+
