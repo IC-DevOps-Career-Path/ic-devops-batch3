@@ -140,3 +140,57 @@ __<p> Open a Terminal or Git Bash and type the following commands: </p>__
 git init
 ```
 <img src="./assets/git-init.gif" title="git initialization">
+
+#### __GIT ADD__
+<p>Before using git add, need to create a file because Git can only track files that already exist. The git add command stages the changes in your working directory (like new or modified files) so that Git knows which files to include in the next commit. If the file doesn't exist yet, there’s nothing for Git to track or add. So, creating the file first gives Git something to track and prepare for future commits.</p>
+
+- Creates an empty file with the given name.
+
+    ```
+    touch <file-name>
+    ```
+
+- Or, to create and edit a file using nano.
+
+    ```
+    nano myfile.txt
+    ```
+
+<p>The git add command is used to stage changes (files and modifications) for the next commit. Here are different ways to use git add :</p>
+
+1. Add All Changes in the Repository
+
+    ```
+    git add .
+    ```
+    <p> Stages all changes in the current directory and its subdirectories. </P>
+
+2. Add Specific Types of Files
+
+    ```
+    git add *.txt
+    ```
+    <p> Stages all files with a .txt extension in the current directory. </P>
+
+3. Add Specific Files by Name
+
+    ```
+    git add <file-name>
+    ```
+    <p> Stages a specific file for commit. </P>
+
+4. Stage All Changes and New Files.
+
+    ```
+    git add -A
+    ```
+    <p> Stage All Changes and New Files Recursively </P>
+
+5. Stage All Changes and New Files.
+
+    ```
+    git add -u
+    ```
+    <p> Stages changes to files that are already being tracked, excluding new files. </P>
+
+    <img src="./assets/git-add.gif" title="git add">
