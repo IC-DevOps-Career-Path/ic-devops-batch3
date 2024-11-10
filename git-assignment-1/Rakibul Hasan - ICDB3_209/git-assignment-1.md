@@ -4,7 +4,7 @@ Git is a powerful version control system (VCS) that enables teams and individual
 
 In this blog, we’ll cover the basics of Git, including what it is, why it’s useful, and how you can get started with some essential commands.
 
-![Thumbnail](../img/GIT%20Introduction.png)
+![Thumbnail](../Rakibul%20Hasan%20-%20ICDB3_209/img/GIT%20Introduction.png)
 
 ## What is Git?
 
