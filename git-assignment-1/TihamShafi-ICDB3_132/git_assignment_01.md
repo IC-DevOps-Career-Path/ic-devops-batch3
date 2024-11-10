@@ -413,7 +413,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <b>Answer   :</b> Everyone faces that, but not to worry.<br> 
       Mostly it happens, when your local repository is not up to date.<br>
       In the next section we will be learning about <b>rebase</b> and <b>reset</b> commands, to avoid such conflicts.<br>
-      Yeah, there are 2 more topics to cover 😅............<br>
+      Yeah, there are few more topics to cover 😅............<br>
       <br><br><br><br>
       <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/491e3e44-11a0-487a-b07b-717f677bbe4a" width="400"><br><br><br>
       <h3>Anyway...</h3>
@@ -518,7 +518,9 @@ changes to the code. So, Git allows you to set user credentials for tracking you
   </ul>
   <br><br><br>
   <div align="center">
-    <h3> For now, these are the essential <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="50"> commands you should be familiar with.<br> You'll frequently encounter these situations and use these commands in your daily workflow.<br> I hope you find them helpful and that they come in handy when you need them.<br> Thank you for your support, and happy coding!</h3><br>
+    <h3> For now, these are the essential <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="50"> commands you should be familiar with.<br> You'll frequently encounter these situations and use these commands in your daily workflow.<br> 
+    For hands-on practice and simulation training, 👉<a href="https://learngitbranching.js.org/">Click Here</a>👈. It's a good website to learn git basics.<br>
+    And I hope you find them helpful and handy. Keep practicing!<br> Thank you for your support, and happy coding!</h3><br>
     <img src="https://user-images.githubusercontent.com/74038190/216656963-09118229-8a9e-4af0-910c-c37f35f2e210.gif" width="150">
   </div>
 </div>
