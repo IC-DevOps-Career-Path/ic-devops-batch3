@@ -68,7 +68,7 @@ __Windows__
     ~~~
     git --version
     ~~~
-    If it shows a version number, Git is installed successfully.
+    <p> If it shows a version number, Git is installed successfully. </p>
 
     <img src="./assets/git-version-check.gif">
 
@@ -85,3 +85,35 @@ __Linux__
     ~~~
     git --version
     ~~~
+
+<!-- GIT configuration and setup  -->
+### __GIT CONFIGURATION AND SETUP__
+
+<p>After installing Git, you need to tell Git who you are. This helps Git keep track of who made which changes.</p>
+
+__<p> Open a Terminal or Git Bash and type the following commands: </p>__
+
+1. Set Your Name :
+
+    ```
+    git config --global user.name "Your Name"
+    ```
+    <p>Replace "Your Name" with your github user name.</p>
+
+2. Set Your Email :
+
+    ```
+    git config --global user.email "you@example.com"
+    ```
+    <p>Replace "you@example.com" with your github email.</p>
+
+3. SetUp Default Branch Name.
+
+    ```
+    git config --global init.defaultBranch main
+    ```
+4. Check Your Configuration.
+
+    ```
+    git config --list
+    ```
