@@ -19,7 +19,7 @@
 
 - #### GIT COMMIT  ............................................  ( [VIEW](#git-commit) )
 
-- #### GIT ADD AND COMMIT REST COMMANDS  ............................................  ( [VIEW](#git-add-and-commit-rest-commands) )
+- #### GIT ADD AND COMMIT TOGETHER__  ............................................  ( [VIEW](#git-add-and-commit-together) )
 
 #### 05. GIT BRANCH ...........................................  ( [VIEW](#git-branch) )
 
@@ -215,4 +215,38 @@ git commit -m "Commit message here"
 
 <!-- GIT add and commit rest commands -->
 
-#### __GIT ADD AND COMMIT REST COMMANDS__
+#### __GIT ADD AND COMMIT TOGETHER__
+
+__METHOD ONE__
+
+```
+git commit -am "Commit message here"
+```
+
+- -a adds all changed files (skips untracked files).
+- -m enables to add a message.
+
+__METHOD TWO__
+
+```
+git add . && git commit -m "Commit message here"
+```
+
+- git add . stages all files
+- && runs git commit right after adding.
+
+__METHOD THREE__
+
+```
+git add -A && git commit -m "Commit message here"
+```
+
+- -A stages everything, including new, modified, and deleted files.
+
+__METHOD FOUR__
+
+```
+git add . && git commit -m "Your message here" -m " - Commit message here"
+```
+
+<img src="./assets/git add and commit.gif" title="git add and commit together">
