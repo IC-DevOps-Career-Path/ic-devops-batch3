@@ -10,9 +10,7 @@
 
 #### 03. GIT CONFIGURATION AND SETUP  .........................  ( [VIEW](#git-configuration-and-setup) )
 
-#### 05. GIT STAGING AND LOCALIZATION .........................  ( [VIEW](#git-staging-and-localization) )
-
-#### 06. GIT STAGING AND LOCALIZATION .........................  ( [VIEW](#git-staging-and-localization) )
+#### 04. GIT STAGING AND LOCALIZATION .........................  ( [VIEW](#git-staging-and-localization) )
 
 <!-- Sub-Table of content -->
 
@@ -20,7 +18,7 @@
 
 - #### GIT COMMIT  ............................................  ( [VIEW](#git-commit) )
 
-#### 07. GIT BRANCH ...........................................  ( [VIEW](#git-branch) )
+#### 05. GIT BRANCH ...........................................  ( [VIEW](#git-branch) )
 
 <!-- Sub-Table of content -->
 
@@ -28,19 +26,19 @@
 
 - #### MERGE  .................................................  ( [VIEW](#merge) )
 
-#### 08. VIEW AND COMPARE .....................................  ( [VIEW](#view-and-compare) )
+#### 06. VIEW AND COMPARE .....................................  ( [VIEW](#view-and-compare) )
 
-#### 09. GIT REBASE ( CHANGING COMMITS ) ......................  ( [VIEW](#git-rebase) )
+#### 07. GIT REBASE ( CHANGING COMMITS ) ......................  ( [VIEW](#git-rebase) )
 
-#### 10. GIT STASH ............................................  ( [VIEW](#git-stash) )
+#### 08. GIT STASH ............................................  ( [VIEW](#git-stash) )
 
-#### 11. CHERRY-PICK ..........................................  ( [VIEW](#cherry-pick) )
+#### 09. CHERRY-PICK ..........................................  ( [VIEW](#cherry-pick) )
 
-#### 12. GIT PUSH AND PULL ....................................  ( [VIEW](#git-push-pull) )
+#### 10. GIT PUSH AND PULL ....................................  ( [VIEW](#git-push-pull) )
 
-#### 13. GIT REMOTE ...........................................  ( [VIEW](#git-remote) )
+#### 11. GIT REMOTE ...........................................  ( [VIEW](#git-remote) )
 
-#### 13. FORKING ..............................................  ( [VIEW](#forking) )
+#### 12. FORKING ..............................................  ( [VIEW](#forking) )
 
 <br>
 
