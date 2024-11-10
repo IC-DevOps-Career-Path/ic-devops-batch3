@@ -122,7 +122,7 @@ __<p> Open a Terminal or Git Bash and type the following commands: </p>__
 
 ### __GIT STAGING AND LOCALIZATION__
 
-__GIT INITIALIZATION__
+#### __GIT INITIALIZATION__
 
 <p>Before initializing Git, we have to start by creating a project folder (if we’re beginning with a fresh new project).</p>
 
