@@ -115,5 +115,6 @@ __<p> Open a Terminal or Git Bash and type the following commands: </p>__
 4. Check Your Configuration.
 
     ```
-    git config --list
+    git config --global --list
     ```
+    <img src="./assets/git-setup-and-configuration.gif">
