@@ -13,6 +13,7 @@
 #### 04. GIT STAGING AND LOCALIZATION .........................  ( [VIEW](#git-staging-and-localization) )
 
 <!-- Sub-Table of content -->
+- #### GIT INITIALIZATION  ...............................................  ( [VIEW](#git-initialization) )
 
 - #### GIT ADD  ...............................................  ( [VIEW](#git-add) )
 
@@ -22,9 +23,9 @@
 
 <!-- Sub-Table of content -->
 
-- #### GIT ADD  ...............................................  ( [VIEW](#git-add) )
+- #### GIT MERGE  ...............................................  ( [VIEW](#git-merge) )
 
-- #### MERGE  .................................................  ( [VIEW](#merge) )
+- #### GIT REBASE  .................................................  ( [VIEW](#git-rebase) )
 
 #### 06. VIEW AND COMPARE .....................................  ( [VIEW](#view-and-compare) )
 
@@ -91,28 +92,51 @@ __Linux__
 
 __<p> Open a Terminal or Git Bash and type the following commands: </p>__
 
-1. Set Your Name :
+1. Set User Name :
 
     ```
     git config --global user.name "Your Name"
     ```
-    <p>Replace "Your Name" with your github user name.</p>
+    <p>Replace "Your Name" with github user name.</p>
 
-2. Set Your Email :
+2. Setting up Email :
 
     ```
     git config --global user.email "you@example.com"
     ```
-    <p>Replace "you@example.com" with your github email.</p>
+    <p>Replace "you@example.com" with github email.</p>
 
-3. SetUp Default Branch Name.
+3. Setting up default branch name.
 
     ```
     git config --global init.defaultBranch main
     ```
-4. Check Your Configuration.
+4. Checking Configuration.
 
     ```
     git config --global --list
     ```
     <img src="./assets/git-setup-and-configuration.gif">
+
+<!-- GIT staging and localization -->
+
+### __GIT STAGING AND LOCALIZATION__
+
+__GIT INITIALIZATION__
+
+<p>Before initializing Git, we have to start by creating a project folder (if we’re beginning with a fresh new project).</p>
+
+- First, have to make a new folder for the project. we can name it according to the project.
+
+    ```
+    mkdir <folder-name>
+    ```
+
+<p> git init command is used to initialize a new Git repository in the current directory. It sets up the necessary Git structure to track project and its changes. </p>
+
+<p> git init, creates a hidden folder called .git in your project directory. This folder contains all the files and configurations Git needs to manage your version control </p>
+
+```
+git init
+```
+<img src="./assets/git-init.gif" title="git initialization">
