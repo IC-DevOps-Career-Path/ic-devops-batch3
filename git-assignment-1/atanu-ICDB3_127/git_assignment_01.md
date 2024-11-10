@@ -22,5 +22,15 @@ mkdir screenshots
 ### 5. Creating a file for documentation all the commands.
 touch git_assignment_01.md 
 
+### 6. Addinf All file to GIT
+git add .
+
+###7. Commiting the stage to git.
+git commit -m ""
+
+
+### 8. Pushing the local repo to GIT.
+git push origin git-assignment-1
+
 
 
