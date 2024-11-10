@@ -19,6 +19,8 @@
 
 - #### GIT COMMIT  ............................................  ( [VIEW](#git-commit) )
 
+- #### GIT ADD AND COMMIT DIFFRENT COMMANDS  ............................................  ( [VIEW](#git-add-and-commit-diffrent-commands) )
+
 #### 05. GIT BRANCH ...........................................  ( [VIEW](#git-branch) )
 
 <!-- Sub-Table of content -->
@@ -194,3 +196,20 @@ git init
     <p> Stages changes to files that are already being tracked, excluding new files. </P>
 
     <img src="./assets/git-add.gif" title="git add">
+
+<!-- GIT Commit -->
+
+#### __GIT COMMIT__
+
+<p>After using git add to stage changes, the next step is to save these changes in the project’s history using git commit.</p>
+
+<p>git commit creates a snapshot of the current state of the code and stores it in Git history. This helps to track specific changes and, if needed, go back to this point later.</p>
+
+```
+git commit -m "Commit message here"
+```
+
+<p>The -m flag is for adding a short message describing what changes we made</p>
+
+<img src="./assets/git-commit.gif" title="git commit">
+
