@@ -1,7 +1,7 @@
 <img src="./images/banner.png" alt="Banner">
 <br>
 <div align="center">
-    <h2><img alt="branch" src="./images/br1.png" style="vertical-align: middle;">  GIT Cheat Sheet <img alt="branch" src="./images/br2.png" style="vertical-align: middle;"></h2>
+    <h2><img alt="branch" src="./images/br1.png" style="vertical-align: middle;">  GIT Guide & Cheat Sheet <img alt="branch" src="./images/br2.png" style="vertical-align: middle;"></h2>
     <b>Git is a version control system, that helps us to track changes in code, making collaboration and version management<br> easy and efficient.</b> <br>Git made our life easier by allowing multiple people to work on the same project simultaneously, and also lets you save different versions of your work, making it easy to manage and revert versions whenever you need. <br> Anyway, let's get started!<br><br>
     <img src="https://user-images.githubusercontent.com/74038190/235223599-0eadbd7c-c916-4f24-af9d-9242730e6172.gif" width="75">&nbsp;<br><br><br>
 </div>
@@ -44,7 +44,7 @@
 
 ### Great! Now you have Git installed in your OS. 🎉🎉🎉
 
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/406eb3e6-caba-401d-93c8-e0a7941c84b9" width="75">&nbsp;
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/406eb3e6-caba-401d-93c8-e0a7941c84b9" width="100">&nbsp;
 
   </div>
 <br>
@@ -114,7 +114,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
 
   <div align="center">
     <b style="font-size: 15px;">Well done! Now you can use Git commands freely in your OS terminal.</b><br>
-    <img src="https://media.tenor.com/1ADKc_7IBw8AAAAi/cute.gif" width="90" alt="Success GIF"><br>
+    <img src="https://media.tenor.com/1ADKc_7IBw8AAAAi/cute.gif" width="100" alt="Success GIF"><br>
   </div>
 </div>
 
@@ -212,7 +212,8 @@ changes to the code. So, Git allows you to set user credentials for tracking you
   <div align="center">
     Branching is really crucial because,<br> 
     it allows multiple developers to work on different features or fixes simultaneously,<br><b>without affecting the main codebase</b><br>
-    As you are not affecting the main branch, it is much safer. ✅
+    As you are not affecting the main branch, it is much safer. ✅<br><br>
+    <img src="./images/Screenshots/branching.PNG" width="800"><br>
   </div><br><br>
 
   <ul>
@@ -237,6 +238,14 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <pre><code>git checkout branch_name</code></pre>
     </li>
     <img src="./images/Screenshots/checkout.PNG"><br><br>
+    <li>
+      Checking out (switching to) older commits, (here, 1 is the latest commit. And "n" is any positive number)
+      <pre><code>git checkout HEAD~n</code></pre>
+    </li>
+    <li>
+      Also you can checkout (switching to) older commits using the commit ID,
+      <pre><code>git checkout commit_id</code></pre>
+    </li>
     <li>
       Renaming the current branch,
       <pre><code>git branch -m new_name</code></pre>
@@ -331,6 +340,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       Shows the list of stashed files,
       <pre><code>git stash list</code></pre>
     </li>
+    <img src="https://user-images.githubusercontent.com/74038190/212748830-4c709398-a386-4761-84d7-9e10b98fbe6e.gif" width="300" align="right">
     <img src="./images/Screenshots/stash.PNG"><br>
     Showing the stashed file with it's commit ID.
     <br><br>
@@ -355,26 +365,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <pre><code> git fetch remote_name branch_name</code></pre>
     </li>
     <br><br>
-    <h3>4️⃣ Push and Pull: </h3>
-    <li>
-      To retrieve and stay up to date (aggressive merging),
-      <pre><code>git pull remote_name branch_name</code></pre>
-    </li>
-    <img src="./images/Screenshots/pull.PNG"><br>
-    As it is already up to date, the pull command didn't change anything.
-    <br><br>
-    <li>
-      To push all the tracked changes and giving a pull request (PR) for merging,
-      <pre><code>git push remote_name branch_name</code></pre>
-    </li>
-    <img src="./images/Screenshots/push.PNG"><br><br>
-    <li>
-      To push all the tracked changes and giving a pull request (PR) for merging <b>by forcing</b>,
-      <pre><code>git push remote_name branch_name -f</code></pre>
-      * Mainly used after <b>'git commit --amend -m "message"'</b>
-    </li>
-    <br><br>
-    <h3>5️⃣ Logs and History: </h3>
+    <h3>4️⃣ Logs and History: </h3>
     <li>
       List all commits with their author, commit ID, date and message,
       <pre><code>git log</code></pre>
@@ -389,9 +380,124 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       List all commits with all the commands of the local repository,
       <pre><code>git reflog</code></pre>
     </li>
-    <img src="./images/Screenshots/reflog.PNG"><br><br>
-
+    <img src="./images/Screenshots/reflog.PNG">
+    <br><br>
+    <h3>5️⃣ Push and Pull: </h3>
+    <li>
+      To push all the tracked changes and giving a pull request (PR) for merging,
+      <pre><code>git push remote_name branch_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/push.PNG"><br><br>
+    <li>
+      To push all the tracked changes and giving a pull request (PR) for merging <b>by forcing</b>,
+      <pre><code>git push remote_name branch_name -f</code></pre>
+      * Mainly used after <b>'git commit --amend -m "message"'</b>
+    </li>
+    <br><br>
+    <li>
+      To retrieve and stay up to date (aggressive merging),
+      <pre><code>git pull remote_name branch_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/pull.PNG"><br>
+    As it is already up to date, the pull command didn't change anything.
+    <br><br>
+    <div align="center">
+      <h3>A full overview of what actually happens after each command,</h3>
+      <br><br>
+      <img src="./images/Git-Working-Tree.png" width="800">
+      <br><br><br>
+      <b>Question :</b> THERE IS A <b>"BUT"</b> ABOUT THIS TOPIC. BECAUSE,<br>
+      <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/504a2680-59a6-420e-b297-5ae89d68e377" width="300">
+      <br><br>
+      <b>Answer   :</b> Everyone faces that, but not to worry.<br> 
+      Mostly it happens, when your local repository is not up to date.<br>
+      In the next section we will be learning about <b>rebase</b> and <b>reset</b> commands, to avoid such conflicts.<br>
+      Yeah, there are more topics to cover 😅............<br>
+      <br><br><br><br>
+      <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/491e3e44-11a0-487a-b07b-717f677bbe4a" width="400"><br><br><br>
+      <h3>Anyway...</h3>
+    </div>
+    <br><br>
+    <h3>6️⃣ Reset and Rebase: </h3>
+    <br><br>
+    <div align="center">
+      <b>Git's reset command</b> is a powerful tool in Git for undoing changes.<br>
+      It’s mainly used to move the current HEAD to a specific state in your commit history,<br>
+      allowing you to modify or remove changes from your project.<br>
+      <h3>📍 So, use it wisely, </h3> or else, you might remove your stored data.<br><br>
+      <img src="https://user-images.githubusercontent.com/74038190/216656934-0dd55b98-a77e-4d26-8865-9147906e0f99.gif" width="100" />
+      <br><br>
+    </div>
+    <h3> Mainly there are 3 types of reset commands. They are,</h3>
+    <ol>
+      <li>
+        <b>Mixed Reset (default):</b> Deletes the last commit, but doesn't delete the code. Takes it to the unstaged mode. So you have to add and commit again,
+        <pre><code>git reset HEAD~1</code></pre>
+      </li>
+      <img src="./images/Screenshots/mixed.PNG"><br>
+      <li>
+        <b>Soft Reset:</b> Similar like the default one. But it takes to the staged mode. So you have to commit only,
+        <pre><code>git reset --soft HEAD~1</code></pre>
+      </li>
+      <img src="./images/Screenshots/soft.PNG"><br>
+      <li>
+        <b>Hard Reset:</b> Deletes the last commited file without any traces,
+        <pre><code>git reset --hard HEAD~1</code></pre>
+      </li>
+      <img src="./images/Screenshots/hard.PNG"><br>
+      <br>
+      <h3>Summary of Reset Modes:</h3>
+      <table>
+        <tr>
+          <th>Mode</th>
+          <th>Staging Area</th>
+          <th>Working Directory</th>
+          <th>Use Case</th>
+        </tr>
+        <tr>
+          <td><code>--soft</code></td>
+          <td>Keep</td>
+          <td>Keep</td>
+          <td>Modify the last commit</td>
+        </tr>
+        <tr>
+          <td><code>--mixed</code></td>
+          <td>Unstage</td>
+          <td>Keep</td>
+          <td>Unstage changes for a new commit</td>
+        </tr>
+        <tr>
+          <td><code>--hard</code></td>
+          <td>Discard</td>
+          <td>Discard</td>
+          <td>Permanently delete recent changes</td>
+        </tr>
+      </table>
+    </ol>
+    <br><br><br><br>
+    <div align="center">
+      <b>Git rebase</b> command mainly integrate changes from one branch into another.<br>  
+      Instead of creating a merge commit, rebase rewrites the commit history to create a linear progression of commits.<br>
+      Most of the time, you will find merge conflicts, during the rebase. <br>
+      <img src="https://user-images.githubusercontent.com/74038190/216654106-c24cc9c0-d319-404e-9bbc-402639637bd9.gif" width="130">
+    </div><br><br>
+    <li>
+      Take all the commits from the current branch, and reapply them on top of the rebased branch,
+      <pre><code>git rebase branch_name</code></pre>
+    </li>
+    <img src="./images/Screenshots/rebase.PNG"><br>
+    <li>
+      Abort the rebase,
+      <pre><code>git rebase --abort</code></pre>
+    </li>
+    <li>
+      Continue rebase after resolving conflicts,
+      <pre><code>git rebase --continue</code></pre>
+    </li>
   </ul>
-  Reset, rebase pending
-
+  <br><br><br>
+  <div align="center">
+    <h3> For now, these are the essential <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="50"> commands you should be familiar with.<br> You'll frequently encounter these situations and use these commands in your daily workflow.<br> I hope you find them helpful and that they come in handy when you need them.<br> Thank you for your support, and happy coding!</h3><br>
+    <img src="https://user-images.githubusercontent.com/74038190/216656963-09118229-8a9e-4af0-910c-c37f35f2e210.gif" width="150">
+  </div>
 </div>
