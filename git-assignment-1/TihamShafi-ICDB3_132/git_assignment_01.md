@@ -14,7 +14,8 @@
 👉 &nbsp;Key Git commands are listed here with example screenshots for easy reference.<br>
 👉 &nbsp;The guide covers most commonly used commands that you will encounter frequently.<br>
 👉 &nbsp;Mainly designed to make using Git easier and more efficient.<br>
-👉 &nbsp;But if you want to directly see the list of git commands, [Click here](#git-commands)<br>
+
+👉 &nbsp;But if you want to directly see the list of git commands, [Click here](#git-commands)
 
 ### Hope you guys will like it, and Good Luck! <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/34376b0e-4ae2-4278-9d3d-82e8016a87d6" width="75">&nbsp;
 
@@ -39,7 +40,13 @@
   <p>Like in here, in my operating system (Windows), to see if the installation is successful,</p>
   <img src="./images/Screenshots/installation1.PNG" alt="Git installation success" style="max-width: 100%;">
 <br><br><br><br>
-  <p align="center"><b style="font-size: 15px;">Great! Now you have Git installed in your OS. 🎉🎉🎉</b></p><br>
+  <div align="center">
+
+### Great! Now you have Git installed in your OS. 🎉🎉🎉
+
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/406eb3e6-caba-401d-93c8-e0a7941c84b9" width="75">&nbsp;
+
+  </div>
 <br>
 
 <div align="center">
@@ -164,8 +171,10 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       It comes to handly, when you are <b>FORKING</b> a repository.<br> 
       (default remote name after cloning <b>"origin"</b>)<br><br>
       <b>Question :</b> NOW WHAT IS <b>FORKING</b>?!<br>
-      <img src="https://c.tenor.com/bzpFHIbvpJMAAAAd/tenor.gif" width=200><br><br>
+      <img src="./images/huh.gif" width="200"><br><br>
       <b>Answer   :</b> Forking creates a personal copy of someone else's repository,<br> allowing independent development without affecting the original project. 👌 <br><br>
+      <img src="./images/Screenshots/fork.PNG"><br><br>
+      Just click the <b>"fork"</b> button, <br>that will create a similar repository in your repository collection.
     </div><br><br>
     <li>
       To check all the remote connections with details,
@@ -188,6 +197,14 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     <img src="./images/Screenshots/remote2.PNG"><br><br>
   </ul>
   <br><br>
+  <div align="center">
+    <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/87360948-7b92-4852-91f7-ff62ddb8fcd4" width="300">
+    <br><br>
+    <b> Be patient 😅 Forking is just like simplified cloning, but more efficient and safer,<br>
+    because you are working on your own remote repository, instead of the main repository.</b><br>
+    Trust me, you just need some hands-on practices 😌
+  </div>
+  <br><br>
 
 ### 🌿 Branching Repository
 
@@ -195,7 +212,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
   <div align="center">
     Branching is really crucial because,<br> 
     it allows multiple developers to work on different features or fixes simultaneously,<br><b>without affecting the main codebase</b><br>
-    As you are not affecting the main codebase, it is much safer.
+    As you are not affecting the main branch, it is much safer. ✅
   </div><br><br>
 
   <ul>
@@ -234,6 +251,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       Force delete a local branch (whether merged or unmerged. <b>Also make sure you are not in the same branch which you are going to delete</b>),
       <pre><code>git branch -D branch_name</code></pre>
     </li>
+    <img src="./images/Screenshots/branch_delete.PNG"><br><br>
     <li>
       Delete a remote branch,
       <pre><code>git push remote_name --delete branch_name</code></pre>
@@ -264,32 +282,46 @@ changes to the code. So, Git allows you to set user credentials for tracking you
   </div>
   <br><br>
   <ul>
+    <h3>1️⃣ Add and Commit:</h3>
     <li>
       See changes in the local repository (<b>Mainly to see if the changes are tracked or untracked by git</b>),
       <pre><code>git status</code></pre>
     </li>
-    <h3>1️⃣ Add and Commit:</h3>
     <li>
       To add all the changes to the staging area (including all untracked and tracked files),<br>
       <pre><code>git add .</code></pre>
     </li>
+    <img src="./images/Screenshots/staging.PNG"><br>
+    Here, in the first part, as the code wasn't tracked by git, the text was in red color. It is the <b>unstaged area</b>.<br>
+    Then after the add command, the code was tracked by git. And the text was in green color. It is the <b>staging area</b>.
+    <br><br>
     <li>
       Saving a snapshot of the staged changes with a custom message,
       <pre><code> git commit -m "Commit_message"</code></pre>
       <b>or,</b>
       <pre><code> git commit </code></pre>
       <b>This will take you to a text editor (by default vim) to write the custom message</b>
-    </li>
+    </li><br><br>
+    <img src="./images/Screenshots/add_commit.PNG"><br>
+    Here, the yellowish code beside the master <b>(9e85eaf6)</b>, it is the commit ID or hash.<br>
+    And as I created a dummyText.txt file, it is showing as change within the local repository.
+    <br><br>
     <li>
       Editing the message of the latest commit,
       <pre><code> git commit --amend -m "Commit_message" </code></pre>
       <b>or,</b>
       <pre><code> git commit --amend</code></pre>
     </li>
+    <br><br>
+    <img src="./images/Screenshots/amend.PNG"><br>
+    Here, you can see, even though we changed the same commit message, <b>the commit ID already changed.</b><br>
+    So, even if we changed the history of the latest commit message, the ID can atleast differentiate it.
+    <br><br>
     <li>
       Take the file from staging area to untracked stage,
       <pre><code>git rm --cached file_name</code></pre>
     </li>
+    <br><br>
     <h3>2️⃣ Stashing: </h3>
     <li>
       Saving staged and unstaged changes to a temporaray storage for a later use,
@@ -299,45 +331,65 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       Shows the list of stashed files,
       <pre><code>git stash list</code></pre>
     </li>
+    <img src="./images/Screenshots/stash.PNG"><br>
+    Showing the stashed file with it's commit ID.
+    <br><br>
     <li>
       Reapply previously stashed changes (more like pasting all the changes from the temporaray storage),
       <pre><code>git stash pop</code></pre>
     </li>
+    <img src="./images/Screenshots/stashpop.PNG"><br><br>
     <li>
       Dropping stashed changes,
       <pre><code>git stash clear</code></pre>
     </li>
+    <br><br>
     <h3>3️⃣ Fetching: </h3>
     <li>
       Download all commits and branches to the local repository,
       <pre><code>git fetch</code></pre>
     </li>
+    <img src="./images/Screenshots/fetch.PNG"><br><br>
     <li>
       Only download the specified branch from the remote,
       <pre><code> git fetch remote_name branch_name</code></pre>
     </li>
+    <br><br>
     <h3>4️⃣ Push and Pull: </h3>
     <li>
       To retrieve and stay up to date (aggressive merging),
       <pre><code>git pull remote_name branch_name</code></pre>
     </li>
+    <img src="./images/Screenshots/pull.PNG"><br>
+    As it is already up to date, the pull command didn't change anything.
+    <br><br>
     <li>
       To push all the tracked changes and giving a pull request (PR) for merging,
       <pre><code>git push remote_name branch_name</code></pre>
     </li>
+    <img src="./images/Screenshots/push.PNG"><br><br>
+    <li>
+      To push all the tracked changes and giving a pull request (PR) for merging <b>by forcing</b>,
+      <pre><code>git push remote_name branch_name -f</code></pre>
+      * Mainly used after <b>'git commit --amend -m "message"'</b>
+    </li>
+    <br><br>
     <h3>5️⃣ Logs and History: </h3>
     <li>
       List all commits with their author, commit ID, date and message,
       <pre><code>git log</code></pre>
     </li>
+    <img src="./images/Screenshots/log.PNG"><br><br>
     <li>
       List one commit per line (n defines the number of commit lines to show),
       <pre><code> git log --oneline [-n]</code></pre>
     </li>
+    <img src="./images/Screenshots/oneline.PNG"><br><br>
     <li>
       List all commits with all the commands of the local repository,
       <pre><code>git reflog</code></pre>
     </li>
+    <img src="./images/Screenshots/reflog.PNG"><br><br>
 
   </ul>
   Reset, rebase pending
