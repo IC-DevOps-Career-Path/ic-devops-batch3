@@ -50,3 +50,8 @@
 <img src="./assets/divider.png" title="divider">
 
 <!-- What is GIT -->
+### __WHAT IS GIT__
+<p>Git is a version control system that tracks changes in your code, helping teams collaborate and manage project history.</p>
+
+__Example__
+<p>Think of building a website with a team. Each person is responsible for different sections like the homepage, contact form, or navigation menu. With Git, each time someone makes an update, a snapshot is saved. If an error appears, you can quickly return to a previous version without losing the rest of the team's work. This way, Git helps you manage changes and easily coordinate updates.</p>
