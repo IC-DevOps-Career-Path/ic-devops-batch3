@@ -19,7 +19,7 @@
 
 - #### GIT COMMIT  ............................................  ( [VIEW](#git-commit) )
 
-- #### GIT ADD AND COMMIT DIFFRENT COMMANDS  ............................................  ( [VIEW](#git-add-and-commit-diffrent-commands) )
+- #### GIT ADD AND COMMIT REST COMMANDS  ............................................  ( [VIEW](#git-add-and-commit-rest-commands) )
 
 #### 05. GIT BRANCH ...........................................  ( [VIEW](#git-branch) )
 
@@ -213,3 +213,6 @@ git commit -m "Commit message here"
 
 <img src="./assets/git-commit.gif" title="git commit">
 
+<!-- GIT add and commit rest commands -->
+
+#### __GIT ADD AND COMMIT REST COMMANDS__
