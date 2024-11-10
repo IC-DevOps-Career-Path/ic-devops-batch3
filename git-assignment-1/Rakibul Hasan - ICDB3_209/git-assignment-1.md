@@ -127,3 +127,10 @@ git merge <branch-name>
 ```
 
 Merging combines the specified branch into the current branch.
+
+## Best Practices for Using Git
+
+- **Commit Often:** Make commits frequently with clear messages to document progress.
+- **Use Branches:** For each new feature or bug fix, create a separate branch.
+- **Pull Before Pushing:** Always pull the latest changes from the remote repository to avoid conflicts.
+- **Write Clear Commit Messages:** A good commit message helps you and your team understand the purpose of each change.
