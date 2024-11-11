@@ -70,7 +70,7 @@ ssh-keygen -t rsa -b 4096 -C "34seu.habib@gmail.com"
 - ***-C:*** Adds a comment to the key. The comment ***34seu.habib@gmail.com*** here serves as an identifier for the key, which is useful for distinguishing it, especially if you have multiple SSH keys.
 
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\ssh-keygen.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/ssh-keygen.png)
 
 Now we shift root.Going to .ssh folder
 ```bash
@@ -78,7 +78,7 @@ Now we shift root.Going to .ssh folder
 ```
 We enter .ssh folder. Check List 
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\ssh-list.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/ssh-list.png)
 
 We can see the files ***id_rsa*** and ***id_rsa.pub***.
 
@@ -86,7 +86,7 @@ We can see the files ***id_rsa*** and ***id_rsa.pub***.
 
 ***id_rsa.pub*** The public key that can be shared and is added to the remote server's ~/.ssh/authorized_keys file. This allows SSH authentication without needing a password. 
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\id_rsa_pub.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/id_rsa_pub.png)
 
 ### Add the Public Key to GitHub
 - Go to your GitHub profile.
@@ -104,7 +104,7 @@ We can see the files ***id_rsa*** and ***id_rsa.pub***.
 ```
 If everything is set up correctly, you should see a message like:
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\ssh-git.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/ssh-git.png)
 
 ### Git Basic Command
 
@@ -141,11 +141,11 @@ or
 ```
 - Untracked Files:
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-untrack.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-untrack.png)
 
 - Changes Not Staged for Commit: When you write  git add . or git add <file name>
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-changes-not-staged.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-changes-not-staged.png)
 
 #### Git commit
 - A Git commit is like a snapshot of your project at a specific point in time. When you make a commit, Git saves the state of your project, including all tracked files, and ***assigns a unique identifier (a commit hash) to this snapshot*** . Each commit is uniquely identified by a ***SHA-1 hash*** , ensuring its integrity and uniqueness. 
@@ -153,9 +153,9 @@ or
 ```bash
  git commit -m "<commit message>"
 ```
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-commit-message.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-commit-message.png)
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-log.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-log.png)
 
 or 
 
@@ -182,7 +182,7 @@ The ***git commit --amend*** command allows you to **modify the most recent comm
  git commit --amend
 ```
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-amend.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-amend.png)
 
 
 If you want to change just the commit message without altering any files, you can simply run git commit --amend, edit the message in your text editor, and save.
@@ -210,19 +210,19 @@ This mode is often used to "unstage" changes, allowing you to adjust what you wa
 - **Unstages changes** (moves them from the staging area back to the working directory) but doesn't delete them from the working directory.
 - This is the default mode for git reset, so if you type git reset commit, it will use --mixed by default.
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-reset-1.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-reset-1.png)
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-reset-2.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-reset-2.png)
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-reset-3.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-reset-3.png)
 
 **Git Soft:** git reset --soft is a Git command used to move the HEAD to a specified commit without affecting the staging area or working directory. It undoes the most recent commit(s), keeping all changes staged, so you can make adjustments or re-commit with a different message or additional changes.
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-reset-4.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-reset-4.png)
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-reset-5.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-reset-5.png)
 
-![Reference Image](/ic-devops-batch3\habiburrahman-ICBD3_080\screenshort\git-reset-6.png)
+![Reference Image](/ic-devops-batch3/habiburrahman-ICBD3_080/screenshort/git-reset-6.png)
 
 #### How it Works
 - **Moves HEAD and branch pointer** to the specified commit.
