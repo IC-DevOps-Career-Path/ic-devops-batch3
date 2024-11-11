@@ -43,7 +43,9 @@
 
 #### 08. CHERRY-PICK ..........................................  ( [VIEW](#cherry-pick) )
 
-#### 09. GIT REMOTE AND PUSH PULL   ...........................................  ( [VIEW](#git-remote-and-push-pull) )
+#### 09. GIT LOCAL TO REMOTE CONNECTION BUILD AND PUSH PULL CLONE   ...........................................  ( [VIEW](#git-local-to-remote-connection-build-and-push-pull-clone) )
+
+
 
 #### 10. FORKING ..............................................  ( [VIEW](#forking) )
 
@@ -669,3 +671,65 @@ git commit --allow-empty
 <p>This is useful when need to add a commit to mark a specific point in history like starting a new feature or adding a note without actually modifying any files.</p>
 
 <img src="./assets/git-cherry-pick.gif" title="git cherry-pick">
+
+<!-- GIT LOCAL TO REMOTE CONNECTION BUILD AND PUSH PULL -->
+### __GIT LOCAL TO REMOTE CONNECTION BUILD AND PUSH PULL CLONE__
+
+#### __REMOTE REPOSITORY CREATE__
+
+<p>TO CREATE A REMOTE REPOSITORY ON GITHUB : </p>
+
+1. Go to [github.com](https://github.com) and log in.
+2. Click the + icon at the top-right corner, then select New repository.
+3. Enter a name for your repository and an optional description.
+4. Choose visibility: Public (anyone can see it) or Private (only you and invited users can see it).
+5. Click Create repository.
+
+<p>Now, GitHub will give you a URL to connect your local Git repository to this remote one. You can use that URL to push your code to GitHub.</p>
+
+<img src="./assets/create-repo.gif" title="repository create">
+
+#### __LOCAL TO REMOTE CONNECTION BUILD AND PUSH__
+
+```
+git branch -M main
+```
+<p>This command git branch -M main renames the current branch to main.</p>
+
+- The -M option forces the rename, even if a branch named main already exists.
+
+
+```
+git remote add origin https://github.com/rejoanulferdoushADN/test.git
+```
+<p>This command connects local Git repository to a remote GitHub repository.</p>
+
+- remote add origin: Adds a remote named "origin" (a default name for the main remote).
+- URL: Links your local repo to the remote repo at the specified URL.
+
+```
+git push -u origin main
+```
+<p>This command git push -u origin main pushes your local main branch to the origin remote repository and sets it as the default tracking branch.</p>
+
+- Pushes: Sends your commits from main to origin.
+- -u (upstream): Sets origin/main as the default branch to push to, so in future you can just run git push without specifying the branch.
+
+#### __GIT CLONE__
+
+```
+git clone
+```
+- This command is used to copy an entire repository from a remote source (like GitHub) to your local machine for the first time.
+- It creates a new directory with all the repository files, commits, and branches.
+
+#### __GIT PULL__
+
+```
+git pull <remote> <branch> or git pull origin main
+```
+- This command updates your existing local repository by pulling in new changes from the remote repository.
+- It fetches and merges changes from the remote to keep your local copy up to date.
+
+
+<img src="./assets/git-remote-connection-push.gif" title="git remote gif">
