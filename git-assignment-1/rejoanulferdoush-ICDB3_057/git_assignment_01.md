@@ -37,19 +37,15 @@
 
 - #### GIT MERGE AND REBASE   ............................................  ( [VIEW](#git-merge-and-rebase) )
 
-#### 06. VIEW AND COMPARE .....................................  ( [VIEW](#view-and-compare) )
+#### 06. GIT AMEND AND REBASE ......................  ( [VIEW](#git-amend-and-rebase) )
 
-#### 07. GIT REBASE ( CHANGING COMMITS ) ......................  ( [VIEW](#git-rebase) )
+#### 07. GIT STASH ............................................  ( [VIEW](#git-stash) )
 
-#### 08. GIT STASH ............................................  ( [VIEW](#git-stash) )
+#### 08. CHERRY-PICK ..........................................  ( [VIEW](#cherry-pick) )
 
-#### 09. CHERRY-PICK ..........................................  ( [VIEW](#cherry-pick) )
+#### 09. GIT REMOTE AND PUSH PULL   ...........................................  ( [VIEW](#git-remote-and-push-pull) )
 
-#### 10. GIT PUSH AND PULL ....................................  ( [VIEW](#git-push-pull) )
-
-#### 11. GIT REMOTE ...........................................  ( [VIEW](#git-remote) )
-
-#### 12. FORKING ..............................................  ( [VIEW](#forking) )
+#### 10. FORKING ..............................................  ( [VIEW](#forking) )
 
 <br>
 
@@ -512,4 +508,86 @@ git checkout branch_name file_name
 
 <img src="./assets/git branch.gif" title="git branch gif">
 
+<!-- Git rebase (Changing commits) -->
+
+### __GIT AMEND AND REBASE__
+
+#### __GIT AMEND__
+
+```
+git commit --amend "New commit message" or git commit --amend -m "New commit message"
+```
+<p>Change only the last commit message, don't do any changes in file</p>
+
+```
+git commit --amend --no-edit
+```
+<p>To skip the editor when no message change is needed, just stage files and run:</p>
+
+#### __GIT REBASE__
+
+1. rebase -i (interactive rebase) with the option to "__reword__"
+
+    <p>Rebase reword lets you edit commit messages from previous commits without changing the actual code in those commits. </p>
+
+    ```
+    git rebase -i HEAD~n
+    ```
+    - Run git rebase -i HEAD~n, where "n" is the number of commits you want to go back.
+    - In the list that appears, change pick to reword next to the commit(s) you want to edit.
+    - Save and close the editor, and Git will prompt you to rewrite the commit message(s) you marked. Before press __i__ from keyboard for inset access.
+    - Once editing is done, press __ESC__, and then :wq to exit edit mode.
+
+2. rebase -i (interactive rebase) with the option to "__edit__"
+
+    <p>Rebase edit lets you modify the content of past commits (not just their messages). </p>
+
+    ```
+    git rebase -i HEAD~n
+    ```
+    - Run git rebase -i HEAD~n, where "n" is the number of commits you want to go back.
+    - In the list that appears, change pick to edit next to the commit(s) you want to edit.
+    - Save and close the editor, and Git will prompt you to rewrite the commit message(s) you marked. Before press __i__ from keyboard for inset access.
+    - Once editing is done, press __ESC__, and then :wq to exit edit mode.
+    - then stage them with git add.
+    - Run git commit --amend to update the commit with your changes.
+    - Continue the rebase with git rebase --continue.
+
+3. rebase -i (interactive rebase) with the option to "__squash__"
+
+    <p>Rebase squash combines multiple commits into a single commit, which can help keep your commit history clean. </p>
+
+    ```
+    git rebase -i HEAD~n
+    ```
+    - Run git rebase -i HEAD~n, where "n" is the number of commits you want to go back.
+    - In the list that appears, keep pick on the first commit and change pick to squash (or s) for the commits you want to merge into the first one.
+    - Save and close the editor. Git will then let you edit the combined commit message for the squashed commits.
+
+4. rebase -i (interactive rebase) with the option to "__fixup__"
+
+    <p>Rebase fixup used during an interactive rebase to squash (merge) a commit with a previous one, without keeping its commit message. </p>
+
+    ```
+    git rebase -i HEAD~n
+    ```
+    - In the list, change pick to fixup (or simply f) next to the commit(s) you want to combine with the previous commit.
+    - Save and close the editor, and Git will squash the selected commit(s) into the one right above it, discarding the commit message of the fixup.
+
+#### __REBASE ROOT AND INDIVIDUAL COMMIT ACCESS__
+
+```
+git rebase -i --root
+```
+<p>This command give access to interactively rebase starting from the very first commit (the "root" commit) of the repository. </p>
+
+```
+git rebase -i <commit_ID>^
+```
+<p>It allows you to rewrite or edit the history starting from a specific point, rather than going back to the very beginning. </p>
+
+<img src="./assets/git-rebase-functions.gif" title="git rebase functions">
+
+<!-- GIT STASH -->
+### __GIT STASH__
 
