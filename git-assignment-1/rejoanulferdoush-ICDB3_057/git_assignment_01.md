@@ -19,6 +19,8 @@
 
 - #### GIT COMMIT  ............................................  ( [VIEW](#git-commit) )
 
+    - #### COMMIT RESET   ............................................  ( [VIEW](#commit-reset) )
+
 - #### GIT ADD AND COMMIT TOGETHER__  ............................................  ( [VIEW](#git-add-and-commit-together) )
 
 - #### FILE UNSTAGE DELETE RESTORE   ............................................  ( [VIEW](#file-unstage-delete-restore) )
@@ -60,13 +62,13 @@
 ### __WHAT IS GIT__
 <p>Git is a version control system that tracks changes in your code, helping teams collaborate and manage project history.</p>
 
-__Example__
+__EXAMPLE__
 <p>Think of building a website with a team. Each person is responsible for different sections like the homepage, contact form, or navigation menu. With Git, each time someone makes an update, a snapshot is saved. If an error appears, you can quickly return to a previous version without losing the rest of the team's work. This way, Git helps you manage changes and easily coordinate updates.</p>
 
 <!-- GIT Installation and GUI -->
 ### __GIT INSTALLATION__
 
-__Windows__
+__WINDOWS__
 1. Go to __[GIT-FOR-WINDOWS]__ Git for Windows and download the installer.
 
 [GIT-FOR-WINDOWS]: https://git-scm.com/
@@ -81,7 +83,7 @@ __Windows__
 
     <img src="./assets/git-version-check.gif">
 
-__Linux__
+__LINUX__
 
 1. Open the Terminal.
 2. Install Git using :
@@ -221,7 +223,38 @@ git commit -m "Commit message here"
 
 <img src="./assets/git-commit.gif" title="git commit">
 
-<!-- GIT add and commit rest commands -->
+<!-- commit reset -->
+#### __COMMIT RESET__
+
+__SOFT RESET__
+
+<p>Soft reset moves HEAD back, keeps changes in the staging area. And use to undo a commit but keep changes ready for another commit.</p>
+
+```
+git reset --soft <commit-hash> or HEAD^/ HEAD~1
+```
+
+__HARD RESET__
+
+<p>Hard reset moves HEAD back, deletes all changes in working directory and staging. And use to remove commits and all related changes permanently.</p>
+
+```
+git reset --hard <commit-hash> or HEAD^/ HEAD~1
+```
+
+__DEFAULT/MIXED RESET__
+
+<p>Default/Mixed Moves HEAD back, unstages changes, but keeps them in working directory. And use to undo a commit and edit changes before restaging.</p>
+
+```
+git reset --hard <commit-hash> or HEAD^/ HEAD~1
+```
+
+<img src="./assets/git-reset.gif" title="git reset">
+
+<!-- GIT add and commit together -->
+
+<br>
 
 #### __GIT ADD AND COMMIT TOGETHER__
 
@@ -303,3 +336,8 @@ git restore file-name
 ```
 
 <img src="./assets/git-restore-delete-unstage.gif">
+
+<!-- GIT Branch -->
+
+### __GIT BRANCH__
+
