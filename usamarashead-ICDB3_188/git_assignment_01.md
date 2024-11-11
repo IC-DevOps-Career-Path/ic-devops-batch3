@@ -21,11 +21,12 @@ GitHub is an online repository, where codes are stored. In GitHub, backend techn
 <p align="center">Comparison between Git and GitHub</p>
  
 ### Difference between Git and GitHub:
-GitHub	Git
-Service	Tool / Software
-Host git repository/ folder / source code	Change control, version control
-Provides GUI Interface	Provides CLI
-Maintained on cloud/ web	Installed and maintained locally
+| GitHub |	Git |
+|---|---|
+| Service	| Tool/Software |
+| Host git repository/folder/source code | Change control, version control |
+| Provides GUI Interface |	Provides CLI |
+| Maintained on cloud/ web |	Installed and maintained locally |
 
 # Some other features of GitHub and Git:  
 a)	GitHub: 
