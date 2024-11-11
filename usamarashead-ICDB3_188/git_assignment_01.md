@@ -18,7 +18,8 @@ GitHub is an online repository, where codes are stored. In GitHub, backend techn
 - Bitbucket
 
 ![screenshots](./screenshots/IMAGE-01.png)
-<center>Comparison between Git and GitHub</center>
+<p align="center">Comparison between Git and GitHub</p>
+ 
 ### Difference between Git and GitHub:
 GitHub	Git
 Service	Tool / Software
