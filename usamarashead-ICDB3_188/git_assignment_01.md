@@ -100,5 +100,17 @@ $ cat .gitconfig
 	name = usamarashead
 usamarashead@usama-rashead-ubuntu:~$
 ```
+#### There are 4 stages: 
+1) Working directory/ workspace 
+2) Stagging area/ index 
+3) Local repository
+4) Remote repository [GitHub] 
 
+![screenshots](./screenshots/IMAGE-03.png)
+<p align="center">Different stages of Git</p>
+
+#### Initialise a directory as a working directory: 
+```
+$ git init 
+```
 
