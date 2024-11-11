@@ -45,8 +45,6 @@
 
 #### 09. GIT LOCAL TO REMOTE CONNECTION BUILD AND PUSH PULL CLONE   ...........................................  ( [VIEW](#git-local-to-remote-connection-build-and-push-pull-clone) )
 
-
-
 #### 10. FORKING ..............................................  ( [VIEW](#forking) )
 
 <br>
@@ -733,3 +731,33 @@ git pull <remote> <branch> or git pull origin main
 
 
 <img src="./assets/git-remote-connection-push.gif" title="git remote gif">
+
+<!-- FORKING -->
+### __FORKING__
+
+<p>Forking is a way to make a copy of someone else's repository on your own GitHub account.</p>
+
+__GIT FORKING PROCESS__
+
+1. FORK THE REPOSITORY
+
+    - Go to the GitHub repository you want to fork.
+    - Click on the "Fork" button (usually in the top right corner).
+    - This will create a copy of the repository in your GitHub account.
+
+2. CLONE THE FORKED REPOSITORY
+
+    - Once the fork is complete, go to your GitHub profile and find the forked repo.
+    - Copy the repository URL (look for the "Code" button).
+    - Open your terminal and run:
+
+3. CREATE A PULL REQUEST (PR)
+
+    - Once modification is done and new update in queue, go back to your GitHub forked repository.
+    - You’ll see a prompt to "Compare & pull request." Click it.
+    - Add details about your changes and submit the pull request.
+    - Your PR will then go to the original repository for review.
+
+<br>
+
+<img src="./assets/forking.gif" title="git forking">
