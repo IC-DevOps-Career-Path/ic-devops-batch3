@@ -1,5 +1,5 @@
-# GIT and GitHub Documentation
-### by USAMA RASHEAD
+<h1 align="center"> GIT and GitHub Documentation</h1>
+<h3 align="center"> by USAMA RASHEAD</h>
 
 ### Git
 Git is a free, open source version control tool that developers install locally on their personal computers
