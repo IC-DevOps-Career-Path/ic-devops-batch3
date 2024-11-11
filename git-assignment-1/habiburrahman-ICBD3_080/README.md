@@ -73,6 +73,7 @@ ssh-keygen -t rsa -b 4096 -C "34seu.habib@gmail.com"
 ![Reference Image](/ic-devops-batch3/git-assignment-1/habiburrahman-ICBD3_080/screenshort/ssh-keygen.png)
 
 Now we shift root.Going to .ssh folder
+
 ```bash
  cd .ssh
 ```
