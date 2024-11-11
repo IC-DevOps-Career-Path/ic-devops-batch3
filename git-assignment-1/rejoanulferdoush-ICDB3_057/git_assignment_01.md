@@ -634,3 +634,38 @@ git stash clear
 <p>Deletes all stashes at once.</p>
 
 <img src="./assets/git-stash.gif" title="git-stash">
+
+<!-- CHERRY-PICK -->
+### __CHERRY-PICK__
+
+```
+git cherry-pick <commit-hash>
+```
+<p>Cherry-pick command apply a specific commit from one branch to another branch. You use it when you want to "pick" just one or a few changes from a series of commits without merging the entire branch.</p>
+
+```
+git cherry-pick -n <commit-hash>
+```
+<p>The -n or --no-commit option applies the changes from a commit but does not automatically create a new commit. This is useful when you want to make adjustments before committing.</p>
+
+```
+git cherry-pick --continue
+```
+<p>If a conflict occurs during cherry-pick, this command continues the cherry-pick process after you've resolved the conflicts.</p>
+
+```
+git cherry-pick --abort
+```
+<p>If something goes wrong, or you decide not to proceed with the cherry-pick, --abort cancels the operation and restores your branch to its original state.</p>
+
+```
+git cherry-pick --skip
+```
+<p>Use to skip current patch</p>
+
+```
+git commit --allow-empty
+```
+<p>This is useful when need to add a commit to mark a specific point in history like starting a new feature or adding a note without actually modifying any files.</p>
+
+<img src="./assets/git-cherry-pick.gif" title="git cherry-pick">
