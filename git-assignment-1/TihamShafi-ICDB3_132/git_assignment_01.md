@@ -231,9 +231,8 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <pre><code>git checkout -b new_branch_name</code></pre>
     </li>
     <img src="./images/Screenshots/create_branch.PNG"><br>
-    Here you can see a star on the left side of dummyBranch in the screenshot.<b> It indicates, which branch you are currently in.</b><br><br>
-    <b>Similarly, you can check it in the vscode,</b><br>
-    <img src="./images/Screenshots/create_branch.PNG"><br><br>
+    Here you can see a star on the left side of dummyBranch in the screenshot.<b> It indicates, which branch you are currently in.</b><br>
+    <b>Similarly, you can check it in the vscode.</b><br><br>
     <li>
       Switch into an existing branch,
       <pre><code>git checkout branch_name</code></pre>
