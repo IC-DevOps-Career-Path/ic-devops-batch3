@@ -591,3 +591,46 @@ git rebase -i <commit_ID>^
 <!-- GIT STASH -->
 ### __GIT STASH__
 
+<p>Git stash command temporarily saves changes in your working directory without committing them, allowing you to work on something else and come back to these changes later.</p>
+
+```
+git stash
+```
+<p>This command saves all changes (tracked and untracked files) in a "stash" and restores the working directory to a clean state.</p>
+
+```
+git stash push -m "message"
+```
+<p>Saves the changes with a custom message to easily identify them later.</p>
+
+
+```
+git stash list
+```
+<p>Applies the most recent stash to your current working directory, keeping the stash for future use.</p>
+
+```
+git stash pop
+```
+
+<p>Lists all the stashes you have saved with unique identifiers</p>
+
+```
+git stash apply
+```
+
+<p>Applies the most recent stash and removes it from the stash list.</p>
+
+```
+git stash drop stash@{0}
+```
+
+<p>Deletes a specific stash.</p>
+
+```
+git stash clear
+```
+
+<p>Deletes all stashes at once.</p>
+
+<img src="./assets/git-stash.gif" title="git-stash">
