@@ -35,11 +35,7 @@
 
 #### 05. GIT BRANCH ...........................................  ( [VIEW](#git-branch) )
 
-<!-- Sub-Table of content -->
-
-- #### GIT MERGE  ...............................................  ( [VIEW](#git-merge) )
-
-- #### GIT REBASE  .................................................  ( [VIEW](#git-rebase) )
+- #### GIT MERGE AND REBASE   ............................................  ( [VIEW](#git-merge-and-rebase) )
 
 #### 06. VIEW AND COMPARE .....................................  ( [VIEW](#view-and-compare) )
 
@@ -385,4 +381,135 @@ git restore file-name
 <!-- GIT Branch -->
 
 ### __GIT BRANCH__
+
+<p>Git branches allow to work on different parts of a project independently. Each branch represents a separate line of development, making it easier to work on new features, fix bugs, or try out ideas without affecting the main code. Branches can be created, switched, merged, or deleted, helping keep your workflow organized and efficient. Here’s a quick guide to the most useful git branch commands for creating, managing, and navigating branches.</p>
+
+#### __LISTING BRANCHES__
+
+```
+git branch
+```
+
+<p>Lists all local branches.</p>
+
+
+```
+git branch -a
+```
+
+<p>Lists all branches, including remote branches.</p>
+
+#### __CREATING BRANCHES__
+
+```
+git branch <branch_name>
+```
+
+<p>Creates a new branch without switching to it.</p>
+
+
+```
+git checkout -b <branch_name> or git switch -c <branch_name>
+```
+
+<p>Creates and switches to a new branch in one command.</p>
+
+#### __SWITCHING BRANCHES__
+
+```
+git checkout <branch_name> or git switch <branch_name>
+```
+
+<p>Switches to the specified branch.</p>
+
+#### __RENAME BRANCHES__
+
+```
+git branch -m <new_branch_name>
+```
+
+<p>Renames the current branch to new_branch_name.</p>
+
+
+```
+git branch -m <old_branch_name> <new_branch_name>
+```
+
+<p>Renames a specific branch.</p>
+
+#### __DELETING BRANCHES__
+
+```
+git branch -d <branch_name>
+```
+
+<p>Deletes a branch that has already been merged.</p>
+
+
+```
+git branch -D <branch_name>
+```
+
+<p>Forcibly deletes a branch, even if it hasn’t been merged.</p>
+
+#### __COMPARING BRANCHES__
+
+```
+git diff <branch_name1> <branch_name2>
+```
+
+<p>Shows the differences between two branches.</p>
+
+#### __GIT MERGE AND REBASE__
+
+```
+git merge <branch_name>
+```
+
+<p>Merge keeps all the branch history and combines it.</p>
+
+```
+git rebase <branch_name>
+```
+
+<p>Rebase cleans up history by rewriting it in a straight line, making it look like a single sequence of changes.</p>
+
+#### __BRANCH STATUS CHECK__
+
+```
+git branch -v
+```
+
+<p>Shows the last commit for each branch.</p>
+
+```
+git branch --merged
+```
+
+<p>Lists branches that have been merged into the current branch.</p>
+
+```
+git branch --no-merged
+```
+
+<p>Lists branches that haven’t been merged.</p>
+
+#### __RESTORE DELETED BRANCH__
+
+```
+git branch branch-name commit-hash
+```
+
+<p>If we need to restore a deleted branch, above command creates a new branch that points to the same commit where the deleted branch was last located.</p>
+
+#### __COPY FILES FROM ONE BRANCH TO ANOTHER__
+
+```
+git checkout branch_name file_name
+```
+
+<p>If we need to copy a file from one branch to another, firstly have to switch to the target branch, the branch where we want the file to be copied</p>
+
+<img src="./assets/git branch.gif" title="git branch gif">
+
 
