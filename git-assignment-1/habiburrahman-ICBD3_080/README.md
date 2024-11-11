@@ -107,7 +107,7 @@ If everything is set up correctly, you should see a message like:
 
 ![Reference Image](/git-assignment-1/habiburrahman-ICBD3_080/screenshort/ssh-git.png)
 
-### Git Basic Command
+# Git Basic Command
 
 #### Git Initialize
 
@@ -236,4 +236,46 @@ This mode is often used to "unstage" changes, allowing you to adjust what you wa
 - **Moves HEAD and the branch pointer** to the specified commit.
 - **Resets the staging area** (index) to match the specified commit.
 - **Resets the working directory** to match the specified commit, discarding any uncommitted changes.
+
+# Git rebase
+Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.
+The general process can be visualized as the following.
+
+![Reference Image](/git-assignment-1/habiburrahman-ICBD3_080/screenshort/git-rebase-1.png)
+
+- **Cleaning Up Commit History:** You can use git rebase to tidy up commit history by making it linear, which is particularly useful before merging a feature branch back into the main branch.
+- **Incorporating Changes from Another Branch:** Rebasing allows you to incorporate changes from another branch without creating a merge commit, which is a common alternative to using git merge.
+
+### Interactive rebase:
+Interactive rebasing is useful for editing, reordering, squashing, or dropping commits.
+
+![Reference Image](/git-assignment-1/habiburrahman-ICBD3_080/screenshort/git-rebase-2.png)
+
+```bash
+ git rebase -i HEAD~3
+```
+![Reference Image](/git-assignment-1/habiburrahman-ICBD3_080/screenshort/git-rebase-3.png)
+
+![Reference Image](/git-assignment-1/habiburrahman-ICBD3_080/screenshort/git-rebase-4.png)
+
+![Reference Image](/git-assignment-1/habiburrahman-ICBD3_080/screenshort/git-rebase-5.png)
+
+![Reference Image](/git-assignment-1/habiburrahman-ICBD3_080/screenshort/git-rebase-6.png)
+
+If there are conflicts during a rebase, Git will pause and allow you to resolve them. Once resolved, you can continue the rebase with:
+
+```bash
+ git add <resolved-files>
+```
+```bash
+ git rebase --continue
+```
+
+If you want to stop the rebase and revert the branch to its previous state, use:
+
+```bash
+ git rebase --abort
+```
+
+
 
