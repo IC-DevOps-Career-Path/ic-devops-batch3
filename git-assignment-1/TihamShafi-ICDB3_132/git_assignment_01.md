@@ -21,9 +21,33 @@
 
 <br><br><br>
 
+## 📄 Index
+
+### 1. [Installation](#installation) [Git download and installation procedure]
+
+### 2. [Setting up Git Credentials](#credentials) [Setting user's git credentials through terminal]
+
+### 3. [Creating a Local Repository](#repo) [Creating repository. Includes <code>clone</code>, <code>init</code> and <code>remote</code> commands]
+
+### 4. [Branching Repository](#branch) [Branching procedure. Includes <code>branch</code> and <code>checkout</code> commands.]
+
+### 5. [Add and Commit](#ac) [<code>Add</code> and <code>commit</code> related git commands]
+
+### 6. [Stashing](#stash) [Git <code>stash</code> related git commands]
+
+### 7. [Fetching](#fetch) [Git <code>fetch</code> related git commands]
+
+### 8. [Logs and History](#hist) [Git <code>log</code> and <code>reflog</code> related git commands]
+
+### 9. [Pull and Push](#pp) [Git <code>pull</code> and <code>push</code> related git commands]
+
+### 10. [Reset and Rebase](#rr) [Git <code>reset</code>, <code>rebase</code> and <code>merge</code> related git commands]
+
+<br><br><br>
+
 <!-- INSTALLATION -->
 <div classname="Installation">
-  <h2>🔧 Installation</h2>
+  <h2 id="installation">🔧 Installation</h2>
   <ul>
     <li>If you are in Windows, Download Git from this <a href="https://git-scm.com/download/win">link</a>.</li>
     <li>If you are in Mac OS, run the following command in your terminal:
@@ -65,7 +89,7 @@ Here, I am going to use <b>Github</b> as my remote repository system.</p><br>
 
 <!-- SETTING UP GIT CREDS -->
 <div classname="credentialSet">
-  <h2>⚙ Setting up Git Credentials</h2>
+  <h2 id="credentials">⚙ Setting up Git Credentials</h2>
 
 If you are working in a team on a single repo, it is important for others to know who made certain
 changes to the code. So, Git allows you to set user credentials for tracking your changes.<br>
@@ -128,6 +152,8 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     <b>(Hotkey: Shift + Left Ctrl + ~)</b><br><br>
     <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="80" alt="Success GIF"><br>   
   </div><br>
+
+<div id="repo"></div>
 
 ### 🔗 Creating a Local Repository
 
@@ -206,6 +232,8 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     Trust me, you just need some hands-on practices 😌
   </div>
   <br><br>
+
+<div id="branch"></div>
 
 ### 🌿 Branching Repository
 
@@ -291,6 +319,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
   </div>
   <br><br>
   <ul>
+    <div id="ac"></div>
     <h3>1️⃣ Add and Commit:</h3>
     <li>
       See changes in the local repository (<b>Mainly to see if the changes are tracked or untracked by git</b>),
@@ -331,6 +360,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <pre><code>git rm --cached file_name</code></pre>
     </li>
     <br><br>
+    <div id="stash"></div>
     <h3>2️⃣ Stashing: </h3>
     <li>
       Saving staged and unstaged changes to a temporaray storage for a later use,
@@ -354,6 +384,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <pre><code>git stash clear</code></pre>
     </li>
     <br><br>
+    <div id="fetch"></div>
     <h3>3️⃣ Fetching: </h3>
     <li>
       Download all commits and branches to the local repository,
@@ -365,6 +396,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <pre><code> git fetch remote_name branch_name</code></pre>
     </li>
     <br><br>
+    <div id="hist"></div>
     <h3>4️⃣ Logs and History: </h3>
     <li>
       List all commits with their author, commit ID, date and message,
@@ -382,6 +414,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
     </li>
     <img src="./images/Screenshots/reflog.PNG">
     <br><br>
+    <div id="pp"></div>
     <h3>5️⃣ Push and Pull: </h3>
     <li>
       To push all the tracked changes and giving a pull request (PR) for merging,
@@ -418,6 +451,7 @@ changes to the code. So, Git allows you to set user credentials for tracking you
       <h3>Anyway...</h3>
     </div>
     <br><br>
+    <div id="rr"></div>
     <h3>6️⃣ Reset and Rebase: </h3>
     <br><br>
     <div align="center">
