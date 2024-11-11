@@ -17,9 +17,9 @@ GitHub is an online repository, where codes are stored. In GitHub, backend techn
 - Perforce 
 - Bitbucket
 
-# IMAGE-01
+<img src="usamarashead-ICDB3_188/screenshots/IMAGE-01.png image"/>
 
-# # Difference between Git and GitHub:
+### Difference between Git and GitHub:
 GitHub	Git
 Service	Tool / Software
 Host git repository/ folder / source code	Change control, version control
