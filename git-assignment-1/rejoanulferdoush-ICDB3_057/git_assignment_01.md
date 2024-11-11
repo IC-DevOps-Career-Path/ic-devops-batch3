@@ -259,7 +259,14 @@ git diff <commit1 ID> <commit2 ID>
 
 <p>Compares changes between two commits.</p>
 
-<br>
+```
+git checkout <commit ID>
+```
+
+<p>To check out a specific commit, we can use the git checkout command along with the commit ID. </p>
+
+<img src="./assets/git-commit-check.gif" title="git commit check">
+
 
 <!-- commit reset -->
 #### __COMMIT RESET__
