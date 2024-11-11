@@ -58,7 +58,7 @@
 <br>
 
 <!-- Divider IMAGE -->
-<img src="./assets/divider.png" title="divider">
+<img src="./assets/devider.png" title="devider">
 
 <!-- What is GIT -->
 ### __WHAT IS GIT__
