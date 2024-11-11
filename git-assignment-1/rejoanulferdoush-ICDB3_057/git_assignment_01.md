@@ -19,6 +19,8 @@
 
 - #### GIT COMMIT  ............................................  ( [VIEW](#git-commit) )
 
+    - #### COMMIT CHECK   ............................................  ( [VIEW](#commit-check) )
+
     - #### COMMIT RESET   ............................................  ( [VIEW](#commit-reset) )
 
 - #### GIT ADD AND COMMIT TOGETHER__  ............................................  ( [VIEW](#git-add-and-commit-together) )
@@ -222,6 +224,42 @@ git commit -m "Commit message here"
 <p>The -m flag is for adding a short message describing what changes we made</p>
 
 <img src="./assets/git-commit.gif" title="git commit">
+
+<!-- Commit check -->
+
+#### __COMMIT CHECK__
+
+```
+git log
+```
+
+<p>Shows the complete commit history of the repository</p>
+
+```
+git log --oneline
+```
+
+<p>Show each commit in a single line, showing just the short commit ID and commit message.</p>
+
+```
+git log --since="yyyy-mm-dd" and --until="yyyy-mm-dd"
+```
+
+<p>Lists commits from a specific date range. Replace yyyy-mm-dd with the desired date</p>
+
+```
+git show <commit ID>
+```
+
+<p>Shows the details of a specific commit, including what changed in that commit. Replace commit ID with the actual ID from git log.</p>
+
+```
+git diff <commit1 ID> <commit2 ID>
+```
+
+<p>Compares changes between two commits.</p>
+
+<br>
 
 <!-- commit reset -->
 #### __COMMIT RESET__
