@@ -113,4 +113,66 @@ usamarashead@usama-rashead-ubuntu:~$
 ```
 $ git init 
 ```
+#### To check status of git (with output)
+```
+$ git status 
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	day1.txt
+
+nothing added to commit but untracked files present (use "git add" to track
+```
+#### To add single file into staging:
+```
+$ git add day1.txt
+```
+#### To add all the file within the directory: 
+```
+$ git add .
+```
+#### Restore previous version from editing by git restore command:
+```
+$ git restore day2.txt
+```
+
+#### To Unstage a file:
+```
+$ git rm --cached day2.txt
+```
+#### After modifying the file, to display the differences: (with output)
+```
+$ git diff
+diff --git a/day1.txt b/day1.txt
+index 5b3fdea..ad9ac99 100644
+--- a/day1.txt
++++ b/day1.txt
+@@ -1,2 +1,3 @@
+ My name is Usama Rashead
+ Edit version-- 0.0.1
++Edit version-- 0.0.2
+
+```
+#### Add and commit within the same command: 
+```
+$ git add . && git commit -m "day 3 data is added"
+```
+<ins>Undo commit or reset in git</ins>
+#### To undo commit in git, there are 3 possible job: 
+- If all you want to do is undo the act of committing, leaving everything else intact, use: 
+```
+git reset --soft HEAD^
+```
+- If all.you want to do is undo the act of committing, and also removing from the stagging area: 
+```
+git reset HEAD^
+``` 
+- And if you actually want to completely undo it, throwing away all uncommitted changes, resetting everything to the previous commit (as the original question asked): 
+```
+git reset --hard HEAD^ 
+```
+
 
