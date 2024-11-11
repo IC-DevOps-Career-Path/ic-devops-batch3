@@ -21,6 +21,8 @@
 
 - #### GIT ADD AND COMMIT TOGETHER__  ............................................  ( [VIEW](#git-add-and-commit-together) )
 
+- #### FILE UNSTAGE DELETE RESTORE   ............................................  ( [VIEW](#file-unstage-delete-restore) )
+
 #### 05. GIT BRANCH ...........................................  ( [VIEW](#git-branch) )
 
 <!-- Sub-Table of content -->
@@ -250,3 +252,48 @@ git add . && git commit -m "Your message here" -m " - Commit message here"
 ```
 
 <img src="./assets/git add and commit.gif" title="git add and commit together">
+
+<!-- File unstage, restage and file delete, restore -->
+### __FILE UNSTAGE DELETE RESTORE__
+
+__FILE UNSTAGE__
+
+```
+git reset test.txt
+```
+<p> Removes file from the staging area, so changes won't be included in the next commit, but keeps them in working directory. </p>
+
+```
+git restore --staged test.txt
+```
+<p> Removes file from the staging area, but keeps the current working directory version unchanged. It "unstages" the file without altering its content. </p>
+
+```
+git rm --cached test.txt
+```
+<p> Deletes files from the repository but keeps it in local working directory, marking it as an untracked file. </p>
+
+__FILE DELETE__
+
+<p>Use git rm <filename> to delete the file both from Git and local folder.</p>
+
+```
+git rm file-name
+```
+
+<p>For directories, use git rm -r <directory-name> to delete the entire directory from Git and local</p>
+
+```
+git rm -r directory-name
+```
+__RESTORE__
+
+<p>The command git restore test.txt is used to discard changes made to test.txt in working directory. </p>
+
+<p>If we made edits to file but haven't staged or committed them yet, running this command will revert files changes back to its last committed state. Also use to restore the deleted file </p>
+
+```
+git restore file-name
+```
+
+<img src="./assets/git-restore-delete-unstage.gif">
