@@ -179,6 +179,7 @@ git reset --hard HEAD^
 #### To see the committing log: (with output)
 ```
 $ git log
+
 commit bb02e5c5c840c8f79f16693accb2cb725d109076 (HEAD -> master)
 Author: usamarashead <usamarashead@gmail.com>
 Date:   Thu Oct 31 22:56:45 2024 +0600
@@ -190,10 +191,5 @@ Author: usamarashead <usamarashead@gmail.com>
 Date:   Wed Oct 30 10:02:59 2024 +0600
 
     day1 data added
-usamarashead@usama-rashead-ubuntu:~/Git_Learn_Anis/my-notes$
-usamarashead@usama-rashead-ubuntu:~/Git_Learn_Anis/my-notes$ git status 
-On branch master
-nothing to commit, working tree clean
-
 ```
 #### 
