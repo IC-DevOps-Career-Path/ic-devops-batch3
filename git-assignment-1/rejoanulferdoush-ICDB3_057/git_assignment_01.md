@@ -23,6 +23,12 @@
 
 - #### FILE UNSTAGE DELETE RESTORE   ............................................  ( [VIEW](#file-unstage-delete-restore) )
 
+    - #### UNSTAGE   ............................................  ( [VIEW](#unstage) )
+
+    - #### DELETE   ............................................  ( [VIEW](#delete) )
+
+    - #### RESTORE   ............................................  ( [VIEW](#restore) )
+
 #### 05. GIT BRANCH ...........................................  ( [VIEW](#git-branch) )
 
 <!-- Sub-Table of content -->
@@ -256,7 +262,7 @@ git add . && git commit -m "Your message here" -m " - Commit message here"
 <!-- File unstage, restage and file delete, restore -->
 ### __FILE UNSTAGE DELETE RESTORE__
 
-__FILE UNSTAGE__
+#### __UNSTAGE__
 
 ```
 git reset test.txt
@@ -273,7 +279,7 @@ git rm --cached test.txt
 ```
 <p> Deletes files from the repository but keeps it in local working directory, marking it as an untracked file. </p>
 
-__FILE DELETE__
+#### __DELETE__
 
 <p>Use git rm <filename> to delete the file both from Git and local folder.</p>
 
@@ -286,7 +292,7 @@ git rm file-name
 ```
 git rm -r directory-name
 ```
-__RESTORE__
+#### __RESTORE__
 
 <p>The command git restore test.txt is used to discard changes made to test.txt in working directory. </p>
 
