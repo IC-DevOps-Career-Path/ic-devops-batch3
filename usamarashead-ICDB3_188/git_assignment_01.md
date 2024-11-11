@@ -174,5 +174,26 @@ git reset HEAD^
 ```
 git reset --hard HEAD^ 
 ```
+##### By using --soft attribute we can delete recent commit but it is still in the staging area that we can recomit it. In the case of --hard attribute it deletes from working directory. In case of --soft attribute we can recomit, from staging area.
 
+#### To see the committing log: (with output)
+```
+$ git log
+commit bb02e5c5c840c8f79f16693accb2cb725d109076 (HEAD -> master)
+Author: usamarashead <usamarashead@gmail.com>
+Date:   Thu Oct 31 22:56:45 2024 +0600
 
+    day 2 data is added again
+
+commit 95ed376b3d5feb0a802ba6589ccbde9b10ec7bc1
+Author: usamarashead <usamarashead@gmail.com>
+Date:   Wed Oct 30 10:02:59 2024 +0600
+
+    day1 data added
+usamarashead@usama-rashead-ubuntu:~/Git_Learn_Anis/my-notes$
+usamarashead@usama-rashead-ubuntu:~/Git_Learn_Anis/my-notes$ git status 
+On branch master
+nothing to commit, working tree clean
+
+```
+#### 
