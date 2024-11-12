@@ -158,3 +158,22 @@ The `<name>` is the name of the remote repository, and the `<url>` is the URL of
 
 ![Git Remote Add](./assets/git-remote-add.png)
 
+2. `git push`: This command is used to push changes from the local repository to the remote repository.
+
+![Git Push](./assets/git-push.png)
+
+The `git push` command is used to push changes from the local repository to the remote repository. In this case, I pushed the changes from the `main` branch to the `origin` remote repository. 
+
+We need to specify the remote repository and the branch name while pushing the changes. For example, `git push origin main`.
+
+We can set the default remote repository and branch using the following command:
+
+```bash
+git push --set-upstream origin main # or
+git push -u origin main
+```
+
+This command sets the default remote repository and branch for the local repository. After setting the default remote repository and branch, we can push changes using the `git push` command without specifying the remote repository and branch.
+
+
+
