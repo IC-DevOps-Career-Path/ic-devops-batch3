@@ -54,3 +54,14 @@ git add .
 Adds files to the staging area. `git add .` stages all changes in the current directory.
 
 ![git add](screenshots/git-add.png)
+
+#### 3. Commit changes
+
+```bash
+git commit -m "meaningful commit message"
+git commit -m "1st commit message" -m "2nd commit message" -m "3rd commit message"
+```
+
+Records changes in the repository with a message. Multiple messages can be added for more detailed descriptions.
+
+![git commit](screenshots/git-commit.png)
