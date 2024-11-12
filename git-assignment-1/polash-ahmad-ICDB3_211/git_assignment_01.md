@@ -74,6 +74,34 @@ git commit --amend
 
 Amends the last commit, useful for modifying the previous commit message or adding new changes to it.
 
-![git commit](screenshots/git-amend-1.png)
-![git commit](screenshots/git-amend-2.png)
-![git commit](screenshots/git-amend-3.png)
+![git amend](screenshots/git-amend-1.png)
+![git amend](screenshots/git-amend-2.png)
+![git amend](screenshots/git-amend-3.png)
+
+#### 5. View status and log
+
+```bash
+git status
+```
+
+Show the current status of the repository.
+
+![git status](screenshots/git-status.png)
+
+```bash
+git log
+```
+
+Displays the commit history.
+
+![git log](screenshots/git-log-1.png)
+![git log](screenshots/git-log-2.png)
+
+```bash
+git reflog
+```
+
+Logs all references (e.g HEAD positions) for easy navigation of past commits.
+
+![git reflog](screenshots/git-reflog-1.png)
+![git reflog](screenshots/git-ref-log-2.png)
