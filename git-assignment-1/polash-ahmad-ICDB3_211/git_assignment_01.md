@@ -65,3 +65,15 @@ git commit -m "1st commit message" -m "2nd commit message" -m "3rd commit messag
 Records changes in the repository with a message. Multiple messages can be added for more detailed descriptions.
 
 ![git commit](screenshots/git-commit.png)
+
+#### 4. Amend a commit
+
+```bash
+git commit --amend
+```
+
+Amends the last commit, useful for modifying the previous commit message or adding new changes to it.
+
+![git commit](screenshots/git-amend-1.png)
+![git commit](screenshots/git-amend-2.png)
+![git commit](screenshots/git-amend-3.png)
