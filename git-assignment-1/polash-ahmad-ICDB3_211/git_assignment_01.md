@@ -7,6 +7,8 @@ This is where the story about git will go...
 ### Table of Contents
 
 1. [Configuration](#configuration)
+2. [Basic Commands](#basic-commands)
+3. [Branching](#branching)
 
 ---
 
@@ -105,3 +107,32 @@ Logs all references (e.g HEAD positions) for easy navigation of past commits.
 
 ![git reflog](screenshots/git-reflog-1.png)
 ![git reflog](screenshots/git-ref-log-2.png)
+
+## Branching
+
+#### 1. List and create branches
+
+```bash
+git branch
+```
+
+Show all branches in the repository.
+
+![git branch](screenshots/git-branch-1.png)
+![git branch](screenshots/git-branch-2.png)
+
+```bash
+git checkout <branch_name>
+```
+
+Switches to the specified branch.
+
+![git checkout](screenshots/git-checkout.png)
+
+```bash
+git checkout -b <branch_name>
+```
+
+Creates and switches to a new branch.
+
+![git checkout -b](screenshots/git-create-checkout.png)
