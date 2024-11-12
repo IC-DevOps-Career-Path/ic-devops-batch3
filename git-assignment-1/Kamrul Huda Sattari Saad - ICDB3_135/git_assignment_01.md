@@ -175,5 +175,23 @@ git push -u origin main
 
 This command sets the default remote repository and branch for the local repository. After setting the default remote repository and branch, we can push changes using the `git push` command without specifying the remote repository and branch.
 
+> We can only push the commits to the remote repository if we have the write access to the remote repository. If we do not have the write access, we need to fork the repository and create a pull request to merge the changes to the main repository.
+
+3. `git pull`: This command is used to pull changes from the remote repository to the local repository.
+
+![Git Pull](./assets/git-pull.png)
+
+The `git pull` command is used to pull changes from the remote repository to the local repository. In this case, I pulled the changes from the `origin` remote repository to the `main` branch.
+
+We need to specify the remote repository and the branch name while pulling the changes. For example, `git pull origin main`.
+
+We can set the default remote repository and branch using the following command:
+
+```bash
+git pull --set-upstream origin main # or
+git pull -u origin main
+```
+
+This command sets the default remote repository and branch for the local repository. After setting the default remote repository and branch, we can pull changes using the `git pull` command without specifying the remote repository and branch.
 
 
