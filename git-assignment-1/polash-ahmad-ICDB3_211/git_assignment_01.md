@@ -9,6 +9,7 @@ This is where the story about git will go...
 1. [Configuration](#configuration)
 2. [Basic Commands](#basic-commands)
 3. [Branching](#branching)
+4. [Resetting Commits](#resetting-commits)
 
 ---
 
@@ -136,3 +137,41 @@ git checkout -b <branch_name>
 Creates and switches to a new branch.
 
 ![git checkout -b](screenshots/git-create-checkout.png)
+
+## Resetting Commits
+
+#### 1. Resetting commits
+
+```bash
+git reset
+```
+
+Unstages files without deleting changes.
+
+![git reset](screenshots/git-reset.png)
+
+```bash
+git reset HEAD~<int>
+```
+
+Moves HEAD backwards by the specified number of commits.
+
+![git reset-head-int](screenshots/git-reset-head-int.png)
+![git reset-head-status](screenshots/git-reset-head-status.png)
+
+```bash
+git reset --soft <commit-hash>
+```
+
+Keeps changes in the working directory.
+
+![git reset --soft hash](screenshots/git-reset-soft-hash-1.png)
+![git reset --soft hash](screenshots/git-reset-soft-hash-2.png)
+
+```bash
+git reset --hard <commit-hash>
+```
+
+Discards changes in the working directory.
+
+![git reset --hard hash](screenshots/git-reset-hard.png)
