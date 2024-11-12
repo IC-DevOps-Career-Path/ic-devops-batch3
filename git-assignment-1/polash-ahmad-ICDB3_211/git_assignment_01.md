@@ -29,3 +29,5 @@ git config --global alias.<shortcut_name> <command_name>
 ```
 
 Define custom shortcuts for frequently used Git commands.
+
+![git alias](screenshots/git-alias.png)
