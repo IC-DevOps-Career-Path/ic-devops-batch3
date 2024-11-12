@@ -13,6 +13,7 @@
 - **Usage**: `git branch <Branch name>`
 - **Example**:
   ```bash
+   git branch
    git branch git-assignment-1
 
 
@@ -47,5 +48,32 @@
   ```bash
      git push origin git-assignment-1
 
+###9. Fetch Changes
+Fetching downloads the latest changes from the remote repository but does not integrate them with local repository.
+
+- **Example**:
+  ```bash
+    git fetch origin
+
+###10. Merge Changes
+To merge the changes into local branch. This command will apply the changes from the fetched branch into your current branch.
+- **Example**:
+  ```bash
+   git merge origin/main
+
+
+### 11. Pull Changes
+For git pull, which combines fetch and merge in one step, directly updating branch with the latest changes from the remote.
+
+- **Example**:
+  ```bash
+   git pull origin main
+
+#### 12. Rebase Changes (Alternative to Merge)
+Rebasing can be useful if you want a linear history without merge commits. This approach takes your local commits and re-applies them on top of the latest commits from the remote.
+
+- **Example**:
+  ```bash
+   git pull --rebase origin main
 
 
