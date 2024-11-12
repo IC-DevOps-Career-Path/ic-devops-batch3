@@ -31,3 +31,15 @@ git config --global alias.<shortcut_name> <command_name>
 Define custom shortcuts for frequently used Git commands.
 
 ![git alias](screenshots/git-alias.png)
+
+## Basic Commands
+
+#### 1. Initialize a new repository.
+
+```bash
+git init
+```
+
+Creates an empty git repository in the current directory.
+
+![git init](screenshots/git-init.png)
