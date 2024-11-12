@@ -9,11 +9,15 @@
 
 - [Introduction](#introduction)
 
+---
+
 ## Introduction
 
 Git is a distributed version control system that is used to track changes in the source code during the software development process. It is designed to coordinate work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
 
 In this assignment, I will demonstrate the basic git commands that are used to manage the source code in a git repository.
+
+---
 
 ## Install and Configure Git
 
@@ -47,6 +51,8 @@ The output of the `git config --list` command will display the configuration set
 > This command will create an alias `co` for the `checkout` command. We can use the `co` alias instead of the `checkout` command.
 
 ![Git Config](./assets/git-config.png)
+
+---
 
 ## Basic Git Commands
 
@@ -92,6 +98,8 @@ We can always just keep one `-m` flag and write the whole commit message in one 
 
 The `git log` command displays the commit history in reverse chronological order. It shows the commit hash, author, date, and commit message and description for each commit.
 
+---
+
 ## Git Branching
 
 Git branching is a powerful feature that allows developers to work on different features or bug fixes in parallel without affecting the main codebase. Branches are lightweight and can be created, switched, and merged easily. In this section, I will demonstrate the basic git commands for branching.
@@ -113,6 +121,8 @@ The `git checkout` command is used to switch between branches. In this case, I s
 ![Git Merge](./assets/git-merge.png)
 
 The `git merge` command is used to merge changes from one branch to another branch. In this case, I merged the changes from the `staging` branch to the `main` branch. The `main` branch is the target branch, and the `staging` branch is the source branch.
+
+---
 
 ## Connect to a Remote Repository
 
