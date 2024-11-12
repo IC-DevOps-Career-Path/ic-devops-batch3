@@ -24,28 +24,28 @@
 ### 4. Creating a folder to create store screenshots
 - **Example**:
   ```bash
-mkdir screenshots
+     mkdir screenshots
 
 ### 5. Creating a file for documentation all the commands.
 - **Example**:
   ```bash
-touch git_assignment_01.md 
+     touch git_assignment_01.md 
 
 ### 6. Addinf All file to GIT
 - **Example**:
   ```bash
-git add .
+     git add .
 
 **###7. Commiting the stage to git.**
 - **Example**:
   ```bash
-git commit -m "Commit Message."
+    git commit -m "Commit Message."
 
 
 ### 8. Pushing the local repo to GIT.
 - **Example**:
   ```bash
-git push origin git-assignment-1
+     git push origin git-assignment-1
 
 
 
