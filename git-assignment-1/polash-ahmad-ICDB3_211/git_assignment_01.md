@@ -43,3 +43,14 @@ git init
 Creates an empty git repository in the current directory.
 
 ![git init](screenshots/git-init.png)
+
+#### 2. Add files to staging
+
+```bash
+git add <file_name>
+git add .
+```
+
+Adds files to the staging area. `git add .` stages all changes in the current directory.
+
+![git add](screenshots/git-add.png)
