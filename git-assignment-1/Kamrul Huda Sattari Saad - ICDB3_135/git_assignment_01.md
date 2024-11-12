@@ -204,4 +204,10 @@ git pull -u origin main
 
 This command sets the default remote repository and branch for the local repository. After setting the default remote repository and branch, we can pull changes using the `git pull` command without specifying the remote repository and branch.
 
+When we set the default remote repository and branch using the `--set-upstream` or `-u` flag, we can use the `git push` and `git pull` commands without specifying the remote repository and branch. Therefore, once we set the default remote repository and branch, we do not need to specify the remote repository and branch while pushing and pulling changes from same remote repository and branch.
+
+---
+
+
+
 
