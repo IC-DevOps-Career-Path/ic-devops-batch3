@@ -1,6 +1,12 @@
 # Git Commands Guide
 
-This is where the story about git will go...
+In the bustling world of Codeville, developers were constantly losing track of their code changes, creating Code Chaos. Then, a wise coder named Linus introduced a magical tool Git.
+
+Git let developers save "snapshots" of their work using git commit, making it easy to revisit past versions. They could also work on different parts of a project in separate branches with git branch, merging changes together later with git merge.
+
+Sometimes, merging caused conflicts, but Git made it easy to resolve them and continue. Developers also learned to use powerful commands like git stash to save work temporarily, and git revert to undo mistakes safely.
+
+With Git, Codeville thrived. Teams collaborated, code stayed organized, and projects grew without fear. Thanks to Git, Codeville found peace, and developers knew their code was safe, one git push away.
 
 ---
 
@@ -13,6 +19,7 @@ This is where the story about git will go...
 5. [Remote Repositories](#remote-repositories)
 6. [Rebasing and Cherry-picking](#rebasing-and-cherry-picking)
 7. [Stashing](#stashing)
+8. [Squashing and Merging](#squashing-and-merging)
 
 ---
 
@@ -304,3 +311,26 @@ Shows all the stashes.
 
 ![git stash list](screenshots/git-stash-list-1.png)
 ![git stash list](screenshots/git-stash-list-2.png)
+
+## Squashing and Merging
+
+#### 1. Squash and Merge
+
+```bash
+git rebase -i HEAD~[int]
+```
+
+Combines multiple commits into one.
+
+![git squash](screenshots/git-rebase-squash-1.png)
+![git squash](screenshots/git-rebase-squash-2.png)
+![git squash](screenshots/git-rebase-squash-3.png)
+![git squash](screenshots/git-rebase-squash-4.png)
+
+```bash
+git merge <branch_name>
+```
+
+Integrates changes from another branch.
+
+![git merge](screenshots/git-merge.png)
