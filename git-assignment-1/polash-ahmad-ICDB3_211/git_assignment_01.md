@@ -12,6 +12,7 @@ This is where the story about git will go...
 4. [Resetting Commits](#resetting-commits)
 5. [Remote Repositories](#remote-repositories)
 6. [Rebasing and Cherry-picking](#rebasing-and-cherry-picking)
+7. [Stashing](#stashing)
 
 ---
 
@@ -272,3 +273,34 @@ git cherry-pick <commit-sha>
 Selectively apply a commit from one branch to another.
 
 ![git cherry-pick](screenshots/git-cherry-pick.png)
+
+## Stashing
+
+#### 1. Stash changes
+
+```bash
+git add <file_name> or git add .
+
+git stash
+```
+
+Temporarily stores changes without commiting them.
+
+![git stash](screenshots/git-stash.png)
+
+```bash
+git stash pop
+```
+
+Re-applies the latest stash.
+
+![git stash pop](screenshots/git-stash-pop.png)
+
+```bash
+git stash list
+```
+
+Shows all the stashes.
+
+![git stash list](screenshots/git-stash-list-1.png)
+![git stash list](screenshots/git-stash-list-2.png)
