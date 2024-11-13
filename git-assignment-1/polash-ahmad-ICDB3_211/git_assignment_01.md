@@ -211,3 +211,11 @@ git remote add <remote_name> <remote_url>
 Add remote url to the repository.
 
 ![git remote add <remote_name> <remote_url>](screenshots/git-remote-add.png)
+
+```bash
+git remote remove <remote_name>
+```
+
+Remove a remote name and url from the repository.
+
+![git remote remove](screenshots/git-remote-remove.png)
