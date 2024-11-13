@@ -187,3 +187,19 @@ git clone <remote_url>
 Creates a copy of a remote repository.
 
 ![git clone remote_url](screenshots/git-clone.png)
+
+```bash
+git remote
+```
+
+Manages repository connections.
+
+![git remote](screenshots/git-remote.png)
+
+```bash
+git remote -v
+```
+
+Displays remote names and remote urls.
+
+![git remote -v](screenshots/git-remote-v.png)
