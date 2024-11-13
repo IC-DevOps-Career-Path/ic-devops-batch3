@@ -10,6 +10,8 @@ This is where the story about git will go...
 2. [Basic Commands](#basic-commands)
 3. [Branching](#branching)
 4. [Resetting Commits](#resetting-commits)
+5. [Remote Repositories](#remote-repositories)
+6. [Rebasing and Cherry-picking](#rebasing-and-cherry-picking)
 
 ---
 
@@ -243,3 +245,20 @@ git pull <remote_name> <branch_name>
 Fetches changes from a remote branch and merges them.
 
 ![git fetch <remote_name> <branch_name>](screenshots/git-pull.png)
+
+## Rebasing and Cherry-picking
+
+#### 1. Rebase
+
+```bash
+git rebase <branch_name>
+
+git rebase --continue
+```
+
+Reapply commits on top of another base. Use `--continue` to contiune after resolving conflicts.
+
+![git rebase](screenshots/git-rebase-1.png)
+![git rebase](screenshots/git-rebase-2.png)
+![git rebase](screenshots/git-rebase-4.png)
+![git rebase](screenshots/git-rebase-3.png)
