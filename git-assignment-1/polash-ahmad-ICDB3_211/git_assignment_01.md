@@ -203,3 +203,11 @@ git remote -v
 Displays remote names and remote urls.
 
 ![git remote -v](screenshots/git-remote-v.png)
+
+```bash
+git remote add <remote_name> <remote_url>
+```
+
+Add remote url to the repository.
+
+![git remote add <remote_name> <remote_url>](screenshots/git-remote-add.png)
