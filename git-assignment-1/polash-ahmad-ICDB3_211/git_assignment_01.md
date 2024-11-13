@@ -171,7 +171,7 @@ Keeps changes in the working directory.
 ![git reset --soft hash](screenshots/git-reset-soft-hash-2.png)
 
 ```bash
-git reset --hard <commit-hash>
+git reset --hard <commit-sha>
 ```
 
 Discards changes in the working directory.
@@ -262,3 +262,13 @@ Reapply commits on top of another base. Use `--continue` to contiune after resol
 ![git rebase](screenshots/git-rebase-2.png)
 ![git rebase](screenshots/git-rebase-4.png)
 ![git rebase](screenshots/git-rebase-3.png)
+
+#### 2. Cherry pick
+
+```bash
+git cherry-pick <commit-sha>
+```
+
+Selectively apply a commit from one branch to another.
+
+![git cherry-pick](screenshots/git-cherry-pick.png)
