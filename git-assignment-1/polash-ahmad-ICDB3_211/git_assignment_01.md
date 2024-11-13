@@ -219,3 +219,27 @@ git remote remove <remote_name>
 Remove a remote name and url from the repository.
 
 ![git remote remove](screenshots/git-remote-remove.png)
+
+```bash
+git push <remote_name> <branch_name>
+```
+
+Sends local changes to a remote branch.
+
+![git push](screenshots/git-push.png)
+
+```bash
+git fetch <remote_name> <branch_name>
+```
+
+Retrieves changes but does not merge.
+
+![git fetch <remote_name> <branch_name>](screenshots/git-fetch.png)
+
+```bash
+git pull <remote_name> <branch_name>
+```
+
+Fetches changes from a remote branch and merges them.
+
+![git fetch <remote_name> <branch_name>](screenshots/git-pull.png)
