@@ -175,3 +175,15 @@ git reset --hard <commit-hash>
 Discards changes in the working directory.
 
 ![git reset --hard hash](screenshots/git-reset-hard.png)
+
+## Remote Repositories
+
+#### 1. Clone, Remote and Push
+
+```bash
+git clone <remote_url>
+```
+
+Creates a copy of a remote repository.
+
+![git clone remote_url](screenshots/git-clone.png)
