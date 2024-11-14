@@ -30,3 +30,23 @@ git rebase -i HEAD~n
 It will show like this,
 
 ![](./screenshoots/Screenshot_4.png)
+
+### commit removing
+We have to use ```reset``` for removing the commit. When using the git reset command, the developer must decide if they want their local files and the Git staging index to be reset back to their state when the previous commit happened, or if the files on the filesystem and the index should remain untouched.
+```bash
+git reset --soft <commit-hash>   #if we want to purge commit history but keep the index and filesystem unchanged.
+```
+![](./screenshoots/Screenshot_5.png)
+```bash
+git reset --hard <commit-hash>   #if we want to clear the index and revert all tracked files to their state at the reset commit.
+```
+![](./screenshoots/Screenshot_7.png)
+
+##### Again if, mistakenly deleted any commit we can undo that using ```revert```. 
+Example,
+
+
+```bash
+git revert <commit-hash>
+```
+![](./screenshoots/Screenshot_9.png)
