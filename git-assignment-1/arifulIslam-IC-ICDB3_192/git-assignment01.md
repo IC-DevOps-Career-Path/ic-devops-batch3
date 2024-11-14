@@ -4,7 +4,7 @@
 
 Followings are the basic commands of git
 
-# git initialization
+# Git initialization
 
 ```bash
 git init
@@ -24,7 +24,7 @@ $git commit -m "Commit message"
 here are the screenshots of the following commands
 ![screenshots](screenshots/Screenshot2.jpg)
 
-# git Amend
+# Git Amend
 
 git amend is used to modify the most recent commit
 
@@ -36,7 +36,7 @@ $git commit --amend -m "3rd Commit Updated"
 here are the screenshots of the following commands
 ![screenshots](screenshots/Screenshot3.jpg)
 
-# Reset
+# Git Reset
 reset is used to move the repository back to a previous commit, discarding any changes made after that commit.
 
 
@@ -59,41 +59,42 @@ here are the screenshots of the following commands
 # Rebase
 
 rebase will simply drop merge commits from the todo list, and put the rebased commits into a single, linear branch
-
+```bash
 $git rebase -i HEAD~2    select specific commit
 $git add .		         After edit file track file
 $git commit --amend	     Modify commit
 $git rebase --continue	 Continue and finish rebasing
-git rebase --abort       undo the git rebase
-
+$git rebase --abort       undo the git rebase
+```
 
 # Change master branch name
-
+```bash
 $git branch -m main
-
+```
 # create new branch
-
+```bash
 $git branch -b branch-name
-
+```
 # checkout branch
-
+```bash
 git checkout branch-name
-
+```
 # git clone
-
+```bash
 git clone ssh/https
-
+```
 # SSH Connection
-
+```bash
 $ssh-keygen
 $ssh -T git@github.com
 $git remote -v
-
+```
 # Git remote connection
-
+```bash
 $git remote add origin git@github.com:githubarif/sample-project.git
-
+```
 # Git pull and push
-
+```bash
 $git pull origin main 
 $git push origin main
+```
