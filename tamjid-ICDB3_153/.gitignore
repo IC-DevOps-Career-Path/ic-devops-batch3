@@ -1,0 +1,43 @@
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules directory for Node.js projects
+node_modules/
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore temporary files and backup files
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+*.swn
+
+# Ignore dependency directories
+/vendor/           # For PHP Composer dependencies
+/.venv/            # For Python virtual environments
+.env               # Environment variables file
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore compiled files
+*.o
+*.out
+*.class
+
+# Ignore macOS system files
+.DS_Store
+._*
+
+# Ignore build directories and files
+/dist/
+.build/
+public/
