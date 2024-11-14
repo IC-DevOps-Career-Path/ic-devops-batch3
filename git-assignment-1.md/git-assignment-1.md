@@ -33,4 +33,13 @@ As i have already added the repository of interactive cares so and clone it and 
 
 now what fetch and pull do ?
 fetch : fetch just collect the data from the remote store 
+
 pull : pull collect the data from remote and execute it in the codebase.
+
+git push ?
+git push basically push my local data into remote access
+
+forking? 
+as i forked the interactive cares repository just not giving any screenshot of it.
+just describing it how it works? we fork to collobarates with people like while working as a team and using a same respository name as main or master we have created different different branches and we work on our branches and after completing our work in our branch we just merge or rebase our branch with the main or master. rebase and merge what we do is based on our choice but as per i have learned rebase is good. 
+and while working as a team it is a good practice to pull or fetch before push anything into the main. 
