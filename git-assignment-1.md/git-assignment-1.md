@@ -26,3 +26,5 @@ when we add data while rebasing the data in the same line we made some change in
 2. accept current change which is i have amend it just now and
 3. accept the incoming change which is my before rebasing data 
 4. both changes we can keep the both data .
+
+For remote the current change is my remote data and my incoming change is my local data 
