@@ -52,6 +52,14 @@ The `git commit` command saves staged changes to the repository, creating a new 
 | `git log <source-branch>`                    | Displays the commit history of the specified branch.                         |
 | `git cherry-pick <commit-hash>`              | Applies the changes from a specific commit onto the current branch.          |
 
+## How `git pull` work?
+
+The `git pull` command fetches updates from a remote branch and merges them into your current branch. It combines two actions: `git fetch`, which retrieves the latest changes from the remote repository, and `git merge`, which applies those changes to your local branch. This keeps your branch up to date with any new commits from collaborators on the remote repository.
+
+## HOw `git` calculate the `SHA`
+
+Git calculates the SHA-1 hash (SHA) for each commit using the commit's content, metadata (author, timestamp), and the previous commit's hash. This ensures each commit has a unique, secure hash, representing its exact state and history within the repository.
+
 ### See the Preview Image of how the command works.
 
 ![Image Link](./screenshots/ss-1.png)
