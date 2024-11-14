@@ -10,4 +10,6 @@ Git reset is 3 types
 2. Mixed by default if we use git reset without mention any command soft or hard git will use mix.
 3. Hard
 
-nothing to change just performig git rebase in this stage
+what git mix and by default git reset do?
+
+git mix removed the data and the commit and make that commit untracked and unstaged that means the data still is my rom locally and if we git add it again and commit it it will restore.
