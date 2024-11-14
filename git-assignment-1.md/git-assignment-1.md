@@ -1,5 +1,25 @@
+setting up git ssh key
+![](git-assignment-1.md/screenshoots/SSH setup in github.png)
+![](git-assignment-1.md/screenshoots/SSH setup in github.png)
+new file create and adding on the git
+![](git-assignment-1.md/screenshoots/adding new and use track with git status.png)
+
+specific add in git 
+![](git-assignment-1.md/screenshoots/specific add before commit.png)
+
+git branch create and delete
+
+![](git-assignment-1.md/screenshoots/git branch create.png)
+![](git-assignment-1.md/screenshoots/git branch delete commad.png)
+![](git-assignment-1.md/screenshoots/git branch delete.png)
+
+git remote add 
+![](git-assignment-1.md/screenshoots/git remote add with name.png)
+
+
 to delete a file in git 
 => rm -rf.git
+![](git-assignment-1.md/screenshoots/delete a git from repository.png)
 
 
 To git reset 
@@ -9,7 +29,15 @@ Git reset is 3 types
 1. Soft
 2. Mixed by default if we use git reset without mention any command soft or hard git will use mix.
 3. Hard
-
+![](git-assignment-1.md/screenshoots/after performing git reset.png)
+![](git-assignment-1.md/screenshoots/git soft reset.png)
+![](git-assignment-1.md/screenshoots/after performing git reset.png)
+![](git-assignment-1.md/screenshoots/git log after git reset.png)
+![](git-assignment-1.md/screenshoots/git reset hard log.png)
+![](git-assignment-1.md/screenshoots/git reset mix.png)
+![](git-assignment-1.md/screenshoots/git soft reset status.png)
+![](git-assignment-1.md/screenshoots/git soft reset.png)
+![](git-assignment-1.md/screenshoots/git status after git hard reset.png)
 what git mix and by default git reset do?
 
 git mix removed the data and the commit and make that commit untracked and unstaged that means the data still is my rom locally and if we git add it again and commit it it will restore.
@@ -17,9 +45,19 @@ git mix removed the data and the commit and make that commit untracked and unsta
 Git Rebase why we need to git rebase ?
 when we need to change the data and commit on a specific commit and file in that moment we need git rebase.
 
+![](git-assignment-1.md/screenshoots/git log after git rebase command.png)
+![](git-assignment-1.md/screenshoots/git rebase then amend.png)
+![](git-assignment-1.md/screenshoots/git rebasing editor.png)
+![](git-assignment-1.md/screenshoots/merge conflict.png)
 what git reflog do ?
 git reflog tracks the commit with the help of commit hash(#) also called as sha. why wee need this ? 
 when we messed with our data and some how we delete the data git track it still 100 commit even we can extended it with 1000 with git reflog we can go back on that messed point and collect our data. 
+![](git-assignment-1.md/screenshoots/heading back to HEAD@1 to restore all the data.png)
+![](git-assignment-1.md/screenshoots/git log after execute reflog.png)
+![](git-assignment-1.md/screenshoots/git reflog.png)
+![](git-assignment-1.md/screenshoots/reflog and back to explain all.png)
+![](git-assignment-1.md/screenshoots/reflog log after executing it.png)
+![](git-assignment-1.md/screenshoots/with reflog going back to before rebase.png)
 
 to push a file on git must need to add git remote there are 3 ways to do it 
 1. git with web i mean https
@@ -28,6 +66,7 @@ to push a file on git must need to add git remote there are 3 ways to do it
 
 what git sqash do ?
 it collect all the data and sqash with one single commit
+![](git-assignment-1.md/screenshoots/git statsh.png)
 
 As i have already added the repository of interactive cares so and clone it and make it to my remote so i'm not giving any screenshot of it cause if i can do it i know how to use these commands.
 
