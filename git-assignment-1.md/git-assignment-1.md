@@ -28,3 +28,5 @@ to push a file on git must need to add git remote there are 3 ways to do it
 
 what git sqash do ?
 it collect all the data and sqash with one single commit
+
+As i have already added the repository of interactive cares so and clone it and make it to my remote so i'm not giving any screenshot of it cause if i can do it i know how to use these commands.
