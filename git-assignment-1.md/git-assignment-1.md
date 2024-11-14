@@ -9,3 +9,5 @@ Git reset is 3 types
 1. Soft
 2. Mixed by default if we use git reset without mention any command soft or hard git will use mix.
 3. Hard
+
+nothing to change just performig git rebase in this stage
