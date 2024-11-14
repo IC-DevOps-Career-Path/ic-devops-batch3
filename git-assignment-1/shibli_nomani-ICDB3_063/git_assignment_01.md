@@ -139,6 +139,8 @@ We do `git add` after `touch` to start tracking the new file immediately.
 ```
 ![command](screenshoots/image-4.png)
 
+![alt text](iscreenshoots/image-8.png)
+
 ## To perform commit
 After using `git add`, the changes you selected are staged, but they are not yet recorded in the repository's history. `git commit` finalizes and saves these changes as a single entry in the commit history.
 
@@ -160,8 +162,11 @@ After using `git add`, the changes you selected are staged, but they are not yet
 # 🔼 Git Push Request
 
 This command pushes your local changes to the remote repository on the specified branch
+```sh
+git push origin git-assignment-1
 
-![command image](screenshoots/image-7.png)
+```
+![command image](screenshoots/image-9.png)
 
 # 📄 Pull Request Description:
 
@@ -178,3 +183,17 @@ One interesting Git concept is how Git calculates unique SHA-1 hashes for commit
 - 🔢 Create a Unique Hash: This data is processed through the SHA-1 cryptographic hash function, generating a 40-character hash (e.g., a3c4f5...) unique to that commit.
 
 - 🔍 Content-Based Identification: Since the hash depends on the content, any change (minor/major) in files or commit metadata will create a completely new hash, ensuring each commit is uniquely identified.
+
+# 🧑Overview 
+
+- 🌐 Set Ubuntu Distribution System on top of WSL
+- 🧑‍💻 Set Git Username and Email Globally to apply across all repositories
+- 🍴 Fork the Git Repo in my Git Repo
+- 📥 Cloning the Repo
+- 📂 Change Directory
+- 🌿 Create Branch
+- 📁 Add Subfolder
+- 📄 Add .md, .gitignore, and screenshots folder
+- 💾 Commit all
+- 🚀 Push to my forked Repo
+- 🔄 Pull it to main/original Git Repo
