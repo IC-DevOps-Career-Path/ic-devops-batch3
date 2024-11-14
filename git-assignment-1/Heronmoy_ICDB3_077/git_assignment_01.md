@@ -89,6 +89,7 @@ Amends the most recent commit with new changes or a modified message.
 ```sh
 git commit --amend
 ```
+![git amend](screenshots/git_amend.png)
 
 #### Delete Last Commit but Keep Changes Unstaged
 
