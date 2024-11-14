@@ -128,27 +128,29 @@ We do `git add` after `touch` to start tracking the new file immediately.
     mkdir screenshoots
 ```
 
-
-![alt text](image-3.png)
+![command](screenshoots/image-5.png)
 
 ## add multiple files
 ```sh
     git add .
 ```
-
+```sh
+    git status
+```
+![command](screenshoots/image-4.png)
 
 ## To perform commit
 After using `git add`, the changes you selected are staged, but they are not yet recorded in the repository's history. `git commit` finalizes and saves these changes as a single entry in the commit history.
 
 ```sh
-    git commit -m "create git_assignment_01.md and .gitignore file"
+    git commit -m "create git_assignment_01.md, .gitignore file, Screenshoots"
 ```
+![alt text](image-1.png)
 
 ## Check log status
 ```sh
     git log
 ```
-![command image](screenshoots/image-1.png)
 
 ![command image](screenshoots/image-6.png)
 
@@ -159,14 +161,13 @@ After using `git add`, the changes you selected are staged, but they are not yet
 
 This command pushes your local changes to the remote repository on the specified branch
 
-![command image](screenshoots/image-5.png)
+![command image](screenshoots/image-7.png)
 
 # 📄 Pull Request Description:
-This pull request contains changes that address [briefly describe what the PR does].
 
 *💡 Interesting Git Concept:*
 
-One inle"teresting Git concept is how Git calculates unique SHA-1 hashes for commits. Git combines commit details such as the author, timestamp, commit message, and the tree structure into a unique string. It then runs this data through the SHA-1 cryptographic hash function, resulting in a 40-character hash that identifies the commit. Any change in the content or commit metadata results in a completely different hash, ensuring each commit is uniquely tracked and verified.
+One interesting Git concept is how Git calculates unique SHA-1 hashes for commits. Git combines commit details such as the author, timestamp, commit message, and the tree structure into a unique string. It then runs this data through the SHA-1 cryptographic hash function, resulting in a 40-character hash that identifies the commit. Any change in the content or commit metadata results in a completely different hash, ensuring each commit is uniquely tracked and verified.
 
 # 🚩 how git pull works under the hood or how git calculated the SHA
 
