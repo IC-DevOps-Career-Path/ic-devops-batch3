@@ -1,6 +1,5 @@
 ![Github Essentials Cover Photo](./assets/git-esentials.png)
 
-
 # Basic Git Commands Assignment
 
 > Submitted by: Kamrul Huda Sattari Saad - ICDB3_135
@@ -8,6 +7,13 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Install and Configure Git](#install-and-configure-git)
+- [Basic Git Commands](#basic-git-commands)
+- [Git Branching](#git-branching)
+- [Connect to a Remote Repository](#connect-to-a-remote-repository)
+- [Reset and Revert Changes](#reset-and-revert-changes)
+- [Rebasing and Reflog](#rebasing-and-reflog)
+- [Conclusion](#conclusion)
 
 ---
 
@@ -40,14 +46,18 @@ The output of the `git config --list` command will display the configuration set
 
 > We can also configure many more things in Git.
 > For example, we can configure the default init branch name by using the following command:
+>
 > ```bash
 > git config --global init.defaultBranch main
 > ```
+>
 > This command will set the default branch name to `main` for all new git repositories.
 > We can also configure aliases for git commands by using the following command:
+>
 > ```bash
 > git config --global alias.co checkout
 > ```
+>
 > This command will create an alias `co` for the `checkout` command. We can use the `co` alias instead of the `checkout` command.
 
 ![Git Config](./assets/git-config.png)
@@ -79,7 +89,7 @@ We can also add individual files to the staging area by specifying the file name
 ![Git Commit](./assets/git-commit.png)
 
 We need to provide a commit message while committing the changes. The commit message should be descriptive and should explain the changes that are being committed. In this case I followed the following pattern:
-    
+
 ```bash
 git commit -m "<type>(<scope>): <short description>" -m "<commit details>" -m "<footer note>"
 ```
@@ -132,7 +142,7 @@ We need to have an account on GitHub to create a new repository. Then we need to
 
 ```bash
 ssh-keygen -t ed2559 -C "your-email@example.com"
-``` 
+```
 
 We can add our SSH key to the SSH-Agent by using the following command:
 
@@ -172,7 +182,7 @@ The `<name>` is the name of the remote repository, and the `<url>` is the URL of
 
 ![Git Push](./assets/git-push.png)
 
-The `git push` command is used to push changes from the local repository to the remote repository. In this case, I pushed the changes from the `main` branch to the `origin` remote repository. 
+The `git push` command is used to push changes from the local repository to the remote repository. In this case, I pushed the changes from the `main` branch to the `origin` remote repository.
 
 We need to specify the remote repository and the branch name while pushing the changes. For example, `git push origin main`.
 
@@ -208,6 +218,81 @@ When we set the default remote repository and branch using the `--set-upstream` 
 
 ---
 
+## Reset and Revert Changes
 
+Sometimes we need to reset or revert the changes in the git repository. **The process of resetting or reverting changes is the main power of a version control system like Git.** In this section, I will demonstrate how to reset and revert changes in the git repository.
 
+1. `git reset`: This command is used to reset the changes in the working directory and the staging area. There are three modes of `git reset` command: `--soft`, `--mixed`, and `--hard`. The default mode is `--mixed`.
+
+> The `HEAD~1` is used to refer to the previous commit. We can also use the commit hash to refer to a specific commit. For example, `git reset --soft <commit-hash>`. We can use the number of commits to refer to the previous commits. For example, `git reset --soft HEAD~2`. The `HEAD~2` refers to the commit before the previous commit. So the number specified after the `~` symbol refers to the number of commits before the current commit.
+
+    1. `--soft`: This mode resets the changes in the working directory and the staging area but keeps the changes in the working directory.
+
+![Git Reset Soft](./assets/git-reset-soft.png)
+
+    As you can see at the top-left corner of this picture, after the soft reset the changes are still in the working directory. The changes are also kept in the staging area.
+
+    2. `--mixed`: This mode resets the changes in the staging area but keeps the changes in the working directory. This is also the default mode of the `git reset` command.
+
+![Git Reset Mixed](./assets/git-reset-mixed.png)
+
+    As you can see at the top-left corner of this picture, after the mixed reset the changes are still in the working directory. But the changes are removed from the staging area. So the main difference from soft reset is the changes are removed from the staging area too which in case of the soft reset, the changes are still in the staging area. So we need to add the changes to the staging area again to commit the changes.
+
+    In most cases, the `--mixed` mode or the default mode is used to reset the changes in the staging area. This mode is useful when we want to unstage the changes that are added to the staging area.
+
+    3. `--hard`: This mode resets the changes in the working directory and the staging area. This reset is very dangerous because it will remove all the changes in the working directory and the staging area. Therefore, it is recommended to use this mode with caution.
+
+![Git Reset Hard](./assets/git-reset-hard.png)
+
+    As you can see at the top-left corner of this picture, after the hard reset the changes i.e. `file3.txt`  are removed from the working directory. The changes are also removed from the staging area. So the changes are completely removed from the git repository.  
+
+    We need to be very careful while using the `--hard` mode of the `git reset` command because it will remove all the changes in the working directory and the staging area.
+
+2. `git revert`: This command is used to revert the changes in the git repository. The `git revert` command creates a new commit that reverts the changes in the specified commit.
+
+![Git Revert](./assets/git-revert.png)
+
+The `git revert` command creates a new commit that reverts the changes in the specified commit. In this case, I reverted the changes in the previous commit using the `HEAD~1` reference. The `HEAD~1` reference refers to the previous commit. Therefore the changes in the previous commit are reverted in the new commit and created a new commit that reverts the changes.
+
+The `git revert` command is useful when we want to revert the changes in the git repository without losing the commit history. The `git revert` command creates a new commit that reverts the changes in the specified commit. Therefore, the commit history is preserved, and the changes are reverted in the new commit.
+
+## Rebasing and Reflog
+
+1. `git reflog`: This command is used to display the reference log of the git repository.
+
+![Git Reflog](./assets/git-reflog.png)
+
+The `git reflog` command displays the reference log of the git repository. The reference log contains the history of the git repository, including the commit hash, and commit message. The reference log is useful to track the changes in the git repository and to recover the lost commits.
+
+Let us suppose we mistakenly did the revert and we want to revert the revert. We can use the `git reflog` command to find the commit hash or the `HEAD@{<number>}` of the commit before the revert. Then we can use the `git reset --hard <commit-hash>` or `git reset --hard HEAD@{<number>}` to reset the changes to the commit before the revert.
+
+![Hard Reset After Reflog](./assets/hard-reset-after-reflog.png)
+
+As you can see after I used the `git reset --hard HEAD@{3}` command, the changes are reverted to the commit before the revert. The changes in the previous commit are restored, and the changes in the revert commit are removed.
+
+2. `git rebase`: This command is used to rebase the commits in the git repository. The `git rebase` command is used to edit our commits made previously without having to lose the commit history.
+
+Command: `git rebase -i HEAD~<number>`
+
+The `-i` flag is used to open the interactive rebase mode. The `HEAD~<number>` is used to refer to the previous commits.
+
+![Git Rebase](./assets/git-rebase.png)
+
+The `git rebase -i HEAD~3` command opens the interactive rebase mode for the last three commits. The interactive rebase mode allows us to edit the commits, squash the commits, or reorder the commits. In this case I chose to edit the second commit. So the my current `HEAD` is at the second commit. 
+
+![Git Commit Amend](./assets/git-commit-amend.png)
+
+After I made the changes to the commit, I used `git add .` to add the changes to the staging area and then used `git commit --amend` to amend the commit. The `git commit --amend` command is used to amend the last commit with the changes in the staging area.
+
+Now to complete the rebasing process, I used `git rebase --continue` command. This command will continue the rebase process and apply the changes to the commits.
+
+![Git Rebase Continue](./assets/git-rebase-continue.png)
+
+The `git rebase --continue` command continues the rebase process and applies the changes to the commits. The changes in the commit are amended, and the commit history is preserved. As you can see, after I used the `git rebase --continue` command, the changes are applied to the 2nd commit and it is updated to the changes I made. You can see the change in the above mentioned screenshot where I use `git log` command.
+
+---
+
+## Conclusion
+
+In this assignment, I demonstrated the basic git commands that are used to manage the source code in a git repository. I also demonstrated how to connect to a remote repository, reset and revert changes, and rebase the commits in the git repository. Git is a powerful version control system that is used to track changes in the source code during the software development process. By using the basic git commands, developers can manage the source code efficiently and collaborate with other developers effectively.
 
