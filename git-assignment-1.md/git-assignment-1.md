@@ -13,3 +13,6 @@ Git reset is 3 types
 what git mix and by default git reset do?
 
 git mix removed the data and the commit and make that commit untracked and unstaged that means the data still is my rom locally and if we git add it again and commit it it will restore.
+
+Git Rebase why we need to git rebase ?
+when we need to change the data and commit on a specific commit and file in that moment we need git rebase
