@@ -33,12 +33,15 @@ It will show like this,
 
 ### commit removing
 We have to use ```reset``` for removing the commit. When using the git reset command, the developer must decide if they want their local files and the Git staging index to be reset back to their state when the previous commit happened, or if the files on the filesystem and the index should remain untouched.
+
+If we want to purge commit history but keep the index and filesystem unchanged.
 ```bash
-git reset --soft <commit-hash>   #if we want to purge commit history but keep the index and filesystem unchanged.
+git reset --soft <commit-hash>
 ```
 ![](./screenshoots/Screenshot_5.png)
+If we want to clear the index and revert all tracked files to their state at the reset commit.
 ```bash
-git reset --hard <commit-hash>   #if we want to clear the index and revert all tracked files to their state at the reset commit.
+git reset --hard <commit-hash>
 ```
 ![](./screenshoots/Screenshot_7.png)
 
@@ -50,3 +53,10 @@ Example,
 git revert <commit-hash>
 ```
 ![](./screenshoots/Screenshot_9.png)
+
+
+## Thank you!
+##### Shahiduzzaman Tauhid
+Developer and DevOps Learner.
+
+ [![linkedin logo](https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge)](https://www.linkedin.com/in/shahiduzzamantauhid/) [![discord logo](https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge)](@shahiduzzamantauhid) [![facebook logo](https://img.shields.io/static/v1?message=Facebook&logo=facebook&label=&color=1877F2&logoColor=white&labelColor=&style=for-the-badge)](https://www.facebook.com/mdshahrier.tauhid)
