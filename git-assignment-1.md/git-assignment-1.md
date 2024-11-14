@@ -43,3 +43,7 @@ forking?
 as i forked the interactive cares repository just not giving any screenshot of it.
 just describing it how it works? we fork to collobarates with people like while working as a team and using a same respository name as main or master we have created different different branches and we work on our branches and after completing our work in our branch we just merge or rebase our branch with the main or master. rebase and merge what we do is based on our choice but as per i have learned rebase is good. 
 and while working as a team it is a good practice to pull or fetch before push anything into the main. 
+
+
+git pr ?
+git pr we why need this while working on others respository and contributing on the project if i make a new feature i and adding on my branch and then i want to publish it in to the main i need to open a pr for that and also to create a pr we need to provide proper description and all so that the owner of that project or the respository can understand and merge or rebase my contribute with him. i don't think i need to provide any screenshot it for also cause im going to open an pr for my this git assignment. 
