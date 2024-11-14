@@ -27,4 +27,10 @@ when we add data while rebasing the data in the same line we made some change in
 3. accept the incoming change which is my before rebasing data 
 4. both changes we can keep the both data .
 
-For remote the current change is my remote data and my incoming change is my local data 
+For remote the current change is my remote data and my incoming change is my local data.
+
+what git reflog do ?
+git reflog tracks the commit with the help of commit hash(#) also called as sha. why wee need this ? 
+when we messed with our data and some how we delete the data git track it still 100 commit even we can extended it with 1000 with git reflog we can go back on that messed point and collect our data. 
+
+if we go back to HEAD@9 we can easly go back to before performing rebase 
