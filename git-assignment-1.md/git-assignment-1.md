@@ -1,6 +1,4 @@
-
-
-TO delete a file in git 
+to delete a file in git 
 => rm -rf.git
 
 
@@ -17,20 +15,16 @@ what git mix and by default git reset do?
 git mix removed the data and the commit and make that commit untracked and unstaged that means the data still is my rom locally and if we git add it again and commit it it will restore.
 
 Git Rebase why we need to git rebase ?
-when we need to change the data and commit on a specific commit and file in that moment we need git rebase
-
-
-why we need git merge ?
-
-when we add data while rebasing the data in the same line we made some change in that time completing the rebase it will show a conflict because of the confict of the data that we need merge in merge we have 4 option 1. compare and take what we need 
-2. accept current change which is i have amend it just now and
-3. accept the incoming change which is my before rebasing data 
-4. both changes we can keep the both data .
-
-For remote the current change is my remote data and my incoming change is my local data.
+when we need to change the data and commit on a specific commit and file in that moment we need git rebase.
 
 what git reflog do ?
 git reflog tracks the commit with the help of commit hash(#) also called as sha. why wee need this ? 
 when we messed with our data and some how we delete the data git track it still 100 commit even we can extended it with 1000 with git reflog we can go back on that messed point and collect our data. 
 
-if we go back to HEAD@9 we can easly go back to before performing rebase 
+to push a file on git must need to add git remote there are 3 ways to do it 
+1. git with web i mean https
+2. with ssh key
+3. gh tool cli
+
+what git sqash do ?
+it collect all the data and sqash with one single commit
