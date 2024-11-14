@@ -61,8 +61,15 @@ Displays the commit history
 
 ```sh
 git log             # displays commits with description
+```
+![git log](screenshots/git_log.png)
+
+
+```sh
 git log --oneline   # displays commits in single line
 ```
+![git log --oneline](screenshots/git_log_oneline.png)
+
 
 ### Enhanced Git Commit Commands
 
@@ -73,6 +80,7 @@ Adds a commit with a short message and an extended description.
 ```sh
 git commit -m "commit message" -m "description"
 ```
+![git commit](screenshots/git_commit.png)
 
 #### Update Last Commit
 
@@ -208,6 +216,8 @@ Reflog records all actions, allowing you to undo steps if necessary.
 ```sh
 git reflog
 ```
+
+![git reflog](screenshots/git_reflog.png)
 
 #### Undo Any Git Action
 
