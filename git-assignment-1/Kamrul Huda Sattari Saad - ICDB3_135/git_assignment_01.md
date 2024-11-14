@@ -226,27 +226,27 @@ Sometimes we need to reset or revert the changes in the git repository. **The pr
 
 > The `HEAD~1` is used to refer to the previous commit. We can also use the commit hash to refer to a specific commit. For example, `git reset --soft <commit-hash>`. We can use the number of commits to refer to the previous commits. For example, `git reset --soft HEAD~2`. The `HEAD~2` refers to the commit before the previous commit. So the number specified after the `~` symbol refers to the number of commits before the current commit.
 
-    1. `--soft`: This mode resets the changes in the working directory and the staging area but keeps the changes in the working directory.
+- `--soft`: This mode resets the changes in the working directory and the staging area but keeps the changes in the working directory.
 
 ![Git Reset Soft](./assets/git-reset-soft.png)
 
-    As you can see at the top-left corner of this picture, after the soft reset the changes are still in the working directory. The changes are also kept in the staging area.
+As you can see at the top-left corner of this picture, after the soft reset the changes are still in the working directory. The changes are also kept in the staging area.
 
-    2. `--mixed`: This mode resets the changes in the staging area but keeps the changes in the working directory. This is also the default mode of the `git reset` command.
+- `--mixed`: This mode resets the changes in the staging area but keeps the changes in the working directory. This is also the default mode of the `git reset` command.
 
 ![Git Reset Mixed](./assets/git-reset-mixed.png)
 
-    As you can see at the top-left corner of this picture, after the mixed reset the changes are still in the working directory. But the changes are removed from the staging area. So the main difference from soft reset is the changes are removed from the staging area too which in case of the soft reset, the changes are still in the staging area. So we need to add the changes to the staging area again to commit the changes.
+As you can see at the top-left corner of this picture, after the mixed reset the changes are still in the working directory. But the changes are removed from the staging area. So the main difference from soft reset is the changes are removed from the staging area too which in case of the soft reset, the changes are still in the staging area. So we need to add the changes to the staging area again to commit the changes.
 
-    In most cases, the `--mixed` mode or the default mode is used to reset the changes in the staging area. This mode is useful when we want to unstage the changes that are added to the staging area.
+In most cases, the `--mixed` mode or the default mode is used to reset the changes in the staging area. This mode is useful when we want to unstage the changes that are added to the staging area.
 
-    3. `--hard`: This mode resets the changes in the working directory and the staging area. This reset is very dangerous because it will remove all the changes in the working directory and the staging area. Therefore, it is recommended to use this mode with caution.
+- `--hard`: This mode resets the changes in the working directory and the staging area. This reset is very dangerous because it will remove all the changes in the working directory and the staging area. Therefore, it is recommended to use this mode with caution.
 
 ![Git Reset Hard](./assets/git-reset-hard.png)
 
-    As you can see at the top-left corner of this picture, after the hard reset the changes i.e. `file3.txt`  are removed from the working directory. The changes are also removed from the staging area. So the changes are completely removed from the git repository.  
+As you can see at the top-left corner of this picture, after the hard reset the changes i.e. `file3.txt`  are removed from the working directory. The changes are also removed from the staging area. So the changes are completely removed from the git repository.  
 
-    We need to be very careful while using the `--hard` mode of the `git reset` command because it will remove all the changes in the working directory and the staging area.
+We need to be very careful while using the `--hard` mode of the `git reset` command because it will remove all the changes in the working directory and the staging area.
 
 2. `git revert`: This command is used to revert the changes in the git repository. The `git revert` command creates a new commit that reverts the changes in the specified commit.
 
