@@ -30,6 +30,28 @@
 ```sh
     git init
 ```
+# 🎃 Create SSH key-gen, publickey  and Add in ssh section of Github for remote access.
+
+### Generate keygen
+```sh
+    ssh-keygen
+```
+![git image](screenshoots/image-11.png)
+
+### see and copy generated key to add it in github ssh access
+```sh
+    cat ~/.ssh/id_rsa.pub
+```
+### Adding in Github SSH section (settings >> SSH and GPG Keys >> New SSH Key)
+
+
+![Command image](screenshoots/image-12.png)
+
+### Test SSH connection
+```sh
+    ssh -T git@github.com
+```
+![Command image](screenshoots/image-13.png)
 
 # 🔀 Git Forking
 
@@ -188,6 +210,7 @@ One interesting Git concept is how Git calculates unique SHA-1 hashes for commit
 
 - 🌐 Set Ubuntu Distribution System on top of WSL
 - 🧑‍💻 Set Git Username and Email Globally to apply across all repositories
+- ♨️ Create SSH key-gen, publickey  and Add in ssh section of Github for remote access.
 - 🍴 Fork the Git Repo in my Git Repo
 - 📥 Cloning the Repo
 - 📂 Change Directory
