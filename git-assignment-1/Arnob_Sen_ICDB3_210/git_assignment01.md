@@ -72,6 +72,51 @@ there is a case when user should use squash..if there is multiple commit means t
 it make all commit into a single commit..<br/>
 squash manupulate the commit history and rebase rewrite  the history.
 
+## Git merge
+lets take a scenario.you are working on a repo that has main branch.you create a branch called update and add some code and commit it..now you want to merge the update branch to main branch.
+#### Create a New Branch and Switch
+```
+git checkout -b update
+
+```
+#### Make Changes and Commit
+```
+git add .
+git commit -m "update code"
+
+```
+#### Switch to Main Branch
+```
+git checkout main
+
+```
+#### Check main is up to date
+```
+git pull origin main
+```
+#### Merge Update Branch into Main Branch
+```
+git merge update
+
+```
+#### Resolve Conflicts
+```
+git status
+git add .
+git commit -m "resolved conflicts"
+```
+#### Delete the Update Branch
+```
+git branch -d update
+```
+### Some concept of merge
+merge is a way to combine two or more branches into one branch. There is three kind of merge
+Squash and merge -> conver the commit into one commit and merge.its manupulate the commit history
+Rebase and merge -> rewrite the commit history and merge
+merge->its additionally add a merge commit.
+better practice is use rebase and merge instead of squash and merge.Because it doesnot change the commit history.<br/>
+
+
 
 
 
