@@ -53,5 +53,25 @@ git reset --hard HEAD~1 -> move the head to previous commit and delete the chang
 git reset HEAD~1 -> move the head to previous commit and delete the changes in staging,,,delete the commit and take the code in unstaging stage...dosenot track it
 (recomonded)
 
+## git rebase
+*** interactive rebase
+git rebase -i HEAD~3 -> take the last 3 commit and make it interactive .rebasing means reapply the commit on top of another commit..<br/>
+
+## git rebase
+*** interactive rebase
+git rebase -i HEAD~3 -> take the last 3 commit and make it interactive .rebasing means reapply the commit on top of another commit..in easy terms rebasing means its in edit mode,pick a commit and make it temporary head ..that means we can edit the commit<br/>
+
+### some concept of rebasing
+git maintain everything by ordering.its go commit by commit,,lets take an example: if we have 3 commit A,B,C...if we go to the 1st commit the git make rest of commit as a stashed..then after editing when we type ` git rebase -i continue` 
+then it fix it commit by commit...
+if we merge a branch to another branch we can use rebasing..
+its stashed the code of one branch and dump it on another branch commit by commit..if there is any conflict ,it can be easily solved..it doesnt manupulate the commit history,,but there is a problem is that it change the commit hash..<br/>
+we can use squash here but it manupulate the history...make all commit into a single commit...its not a good practice if anyone want all commit then he/she should use rebase..squash delete the all commit and convert it into a single commit
+
+there is a case when user should use squash..if there is multiple commit means the same changes then here can be use squash,
+it make all commit into a single commit..<br/>
+squash manupulate the commit history and rebase rewrite  the history.
+
+
 
 
