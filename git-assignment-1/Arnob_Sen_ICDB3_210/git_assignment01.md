@@ -116,6 +116,21 @@ Rebase and merge -> rewrite the commit history and merge
 merge->its additionally add a merge commit.
 better practice is use rebase and merge instead of squash and merge.Because it doesnot change the commit history.<br/>
 
+## reset
+reset is used to undo changes in the working directory and the staging area.
+
+```
+git reflog
+
+```
+its show all the changes in the entire code.If we want to undo a commit..we have to go to the next commit..for example there is 5 commit I have and I want to undo 3rd commit..So I have to go in 2nd commit..beceause in 2nd commit there is no 3rd commit
+
+```
+git reset HEAD @{4}
+
+```
+this command will undo the 3rd commit and the changes will be in the staging area.
+
 
 
 
