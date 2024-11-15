@@ -139,7 +139,7 @@ We do `git add` after `touch` to start tracking the new file immediately.
 ```
 ![command](screenshoots/image-4.png)
 
-![alt text](iscreenshoots/image-8.png)
+![alt text](screenshoots/image-8.png)
 
 ## To perform commit
 After using `git add`, the changes you selected are staged, but they are not yet recorded in the repository's history. `git commit` finalizes and saves these changes as a single entry in the commit history.
@@ -147,7 +147,6 @@ After using `git add`, the changes you selected are staged, but they are not yet
 ```sh
     git commit -m "create git_assignment_01.md, .gitignore file, Screenshoots"
 ```
-![alt text](image-1.png)
 
 ## Check log status
 ```sh
