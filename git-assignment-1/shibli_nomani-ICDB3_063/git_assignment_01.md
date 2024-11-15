@@ -30,7 +30,6 @@
 ### To verify the credential
 ```sh
 git config --global --list
-
 ```
 
 ## Git initialization
@@ -197,7 +196,38 @@ git push origin git-assignment-1
 ```
 ![command image](screenshoots/image-9.png)
 
-# 📄 Pull Request Description:
+### Result after git push in my sub branch of my Forked Repo
+
+![command image](screenshoots/image-14.png)
+
+# 🎯 Create a Pull Request from assigned Sub Branch of my Forked Repo to the Original Repository in Github
+
+*`- Main Branch: ic-devops-batch3`*
+*`- Sub Branch: git-assignment-1`*
+
+- click on top  `forked from IC-DevOps-Career-Path/ic-devops-batch3` to go to original Repo
+
+![git image](screenshoots/image-15.png)
+
+- select *New pull request* for pull my forked repo work
+
+![git image](screenshoots/image-16.png)
+
+- Compare changes
+
+![git image](screenshoots/image-17.png)
+
+- Compare across forks and create pull request.
+
+![alt text](image.png)
+![git image](screenshoots/image-18.png)
+- create pull request
+
+![git image](screenshoots/image-19.png)
+- Commit details with hash value
+
+![git image](screenshoots/image-20.png)
+# 📄 Pull Request :
 
 *💡 Interesting Git Concept:*
 
