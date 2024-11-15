@@ -2,18 +2,19 @@
 
 # 🌐Project/Assignment Submission: Fork, Branch, Add, PR in Ubunutu on top of WSL 
 
-## Check wsl status
+## Check wsl status in powershell terminal
 
 ```sh
     wsl --list --verbose
 ```
+![Command image](screenshoots/image-0.png)
 
 ## start the Ubuntu 20.04 distribution
 
 ```sh
     wsl -d Ubuntu-20.04   
 ```
-![Command image](screenshoots/image-0.png)
+![command image ](screenshoots/image-00.png)
 
 
 ## Run Global Config
@@ -24,7 +25,13 @@
 ```sh
     git config --global user.email "nomaniaiub@gmail.com"
 ```
-![Command image](screenshoots/image-00.png)
+![Command image](screenshoots/image-00000.png)
+
+### To verify the credential
+```sh
+git config --global --list
+
+```
 
 ## Git initialization
 ```sh
