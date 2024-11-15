@@ -243,6 +243,11 @@ One interesting Git concept is how Git calculates unique SHA-1 hashes for commit
 
 - 🔍 Content-Based Identification: Since the hash depends on the content, any change (minor/major) in files or commit metadata will create a completely new hash, ensuring each commit is uniquely identified.
 
+# 🏆 Final Outcome
+
+![alt text](image.png)
+ 
+
 # 🧑Overview 
 
 - 🌐 Set Ubuntu Distribution System on top of WSL
