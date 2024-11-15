@@ -8,14 +8,13 @@ git config --global --get user.name
 ```
 
 ## Git Commands
-git init -> git create .git folder.it works like filebase database,take care of all history and track files
-
-git status-> looks the status of the file  <br/>
-git add < file name > -> add file to staging area <br/>
-git add . -> add all files to staging area <br/>
-git commit -m "message" -> commit the file with a message <br/>
+`git init` -> git create .git folder.it works like filebase database,take care of all history and track files <br/>
+`git status`-> looks the status of the file  <br/>
+`git add < file name >` -> add file to staging area <br/>
+`git add . `-> add all files to staging area <br/>
+`git commit -m "message"` -> commit the file with a message <br/>
 commit message should be in present tense and first letter should be capital <br/>
-git log -> shows all the commit history <br/>
+```git log``` -> shows all the commit history <br/>
 ## head
 in which stage the latest code is
 
@@ -131,7 +130,23 @@ git reset HEAD @{4}
 ```
 this command will undo the 3rd commit and the changes will be in the staging area.
 
+## some additional command
+to see how many remote
+```
+git remote -v
+```
+add remote
+```
+git remote add origin https://github.com/username/repository.git
+```
+rename remote
+```
+git remote rename origin new-origin
+```
+if want to fetch a branch
 
+```
+git fetch origin branch-name
 
-
+```
 
