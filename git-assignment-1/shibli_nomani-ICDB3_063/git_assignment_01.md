@@ -147,6 +147,7 @@ After using `git add`, the changes you selected are staged, but they are not yet
 ```sh
     git commit -m "create git_assignment_01.md, .gitignore file, Screenshoots"
 ```
+![command image](screenshoots/image-10.png)
 
 ## Check log status
 ```sh
