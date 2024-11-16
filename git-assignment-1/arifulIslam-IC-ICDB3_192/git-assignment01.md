@@ -8,19 +8,27 @@ Followings are the basic commands of git
 
 ```bash
 git init
-git config --global user.name arif 
-git config --global user.email arif@gmail.com
+git config --global user.name "arif" 
+git config --global user.email "samplemail@gmail.com"
 ```
 here are the screenshots of the following commands
 ![screenshots](screenshots/Screenshot1.jpg)
 
-# Add file and commit
+# Git Status
 
+Check git current status. 
+```bash
+$git status
+```
+
+# File staging and commit
+
+```bash
 $git add <file-name>
 or git add .
 
 $git commit -m "Commit message"
-
+```
 here are the screenshots of the following commands
 ![screenshots](screenshots/Screenshot2.jpg)
 
@@ -72,9 +80,11 @@ $git rebase --abort       undo the git rebase
 $git branch -m main
 ```
 # create new branch
+
 ```bash
-$git branch -b branch-name
+$git checkout -b branch-name
 ```
+
 # checkout branch
 ```bash
 git checkout branch-name
@@ -97,4 +107,10 @@ $git remote add origin git@github.com:githubarif/sample-project.git
 ```bash
 $git pull origin main 
 $git push origin main
+```
+
+# Git Log
+Git log is use to show all log 
+```bash
+$git log
 ```
