@@ -192,7 +192,6 @@ After using `git add`, the changes you selected are staged, but they are not yet
 This command pushes your local changes to the remote repository on the specified branch
 ```sh
 git push origin git-assignment-1
-
 ```
 ![command image](screenshoots/image-9.png)
 
@@ -219,11 +218,11 @@ git push origin git-assignment-1
 
 - Compare across forks and create pull request.
 
-![alt text](image.png)
 ![git image](screenshoots/image-18.png)
 - create pull request
 
 ![git image](screenshoots/image-19.png)
+
 - Commit details with hash value
 
 ![git image](screenshoots/image-20.png)
@@ -245,8 +244,7 @@ One interesting Git concept is how Git calculates unique SHA-1 hashes for commit
 
 # 🏆 Final Outcome
 
-![alt text](image.png)
- 
+![git image](screenshoots/image-21.png)
 
 # 🧑Overview 
 
