@@ -1,0 +1,73 @@
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop
+$ git clone git@github.com:IamEshan/ic-devops-batch3.git
+Cloning into 'ic-devops-batch3'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 11 (delta 1), reused 8 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (11/11), done.
+Resolving deltas: 100% (1/1), done.
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop
+$ ls
+Discord.lnk*          SS/              desktop.ini
+ReadmeAssignment.txt  Sample_Project/  ic-devops-batch3/
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop
+$ cd ic-devops-batch3/
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3 (main)
+$ git co git-assignment-1
+Updated 0 paths from the index
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3 (main)
+$ git co -b "git-assignment-1"
+Switched to a new branch 'git-assignment-1'
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3 (git-assignment-1)
+$ ls
+README.md  git-assignment-1/
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3 (git-assignment-1)
+$ cd git-assignment-1/
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1 (git-assignment-1)
+$ mkdir "Touhiduzzaman Eshan - IC-STUDENT_ID"
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1 (git-assignment-1)
+$ cd Touhiduzzaman\ Eshan\ -\ IC-STUDENT_ID/
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ touch README.md
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ ls
+README.md
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ vim README.md
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ mkdir images
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ ls
+README.md  images/
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ touch git_assignment_01.md
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ ls
+README.md  git_assignment_01.md  images/
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ vim git_assignment_01.md
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$ touch command_for-git-assignment-1.txt
+
+PC@DESKTOP-5P8UO19 MINGW64 ~/Desktop/ic-devops-batch3/git-assignment-1/Touhiduzzaman Eshan - IC-STUDENT_ID (git-assignment-1)
+$
+
