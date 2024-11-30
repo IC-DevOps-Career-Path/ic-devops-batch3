@@ -39,6 +39,8 @@ composer.lock
 /bootstrap/cache/*
 
 # IDE files
+*.pub
+1122
 
 # Visual Studio Code
 .vscode/
@@ -93,4 +95,3 @@ __pycache__/
 # Temporary files
 *.tmp
 *.temp
-
