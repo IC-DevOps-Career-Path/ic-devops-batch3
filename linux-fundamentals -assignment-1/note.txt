@@ -1,0 +1,4 @@
+git add .
+git commit -m "Linux Fundamentals Assignment 1"
+git remote add origin <your-repo-link>
+git push origin main
